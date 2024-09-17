@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Act 4-Gonzalo Nieto</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+      h2{
+        text-align:left;
+      }
+    </style>
+    <script>
+        function validezContrasena(){
+          var contrasenaId = document.getElementById('contrasena').value;
+        //Expresiones Regulares de todos los caracteres que permitimos en la Contraseña
+          var expresionMinisculas = /[a-z]/gm;
+          var expresionMayusculas = /[A-Z]/gm;
+          var expresionNumeros = /[0-9]/gm;
+          var expresionEspeciales = /[?:*.[?@$.<>"&/%¡!_-]/gm;
+        //Contador incremental para la Fortaleza de la Contraseña ,meter
+          var contadorFortalezaContrasena = 0;
+          if (expresionMinisculas.test(contrasena) == true) {
+            contadorFortalezaContrasena++;
+          }
+          if (expresionMayusculas.test(contrasena) == true) {
+            contadorFortalezaContrasena = contadorFortalezaContrasena + 3;
+          }
+          if (expresionNumeros.test(contrasena) == true) {
+            contadorFortalezaContrasena = contadorFortalezaContrasena + 3;
+          }
+          if (expresionEspeciales.test(contrasena) == true) {
+            contadorFortalezaContrasena = contadorFortalezaContrasena + 3;
+          }
+          document.getElementById('contrasenaMeter').value = contadorFortalezaContrasena;
+
+        }
+
+        function validarMismaContrasena(){
+          if (input.value != document.getElementById('contrasena').value) {
+            input.setCustomValidity('La Contraseñas no son iguales!');
+          }else {
+            input.setCustomValidity('');
+          }
+        }
+        function validarCodigoPostal(){
+          var introducirCodigoPostal = document.getElementById("codigoPostal").value;
+          var exresionRegular =/^([1-9]{2}|[0-9][1-9]|[1-9][0-9])[0-9]{3}$/;
+          if (exresionRegular.test(introducirCodigoPostal)==true) {
+            alert("Correcte");
+          }else {
+            alert("Incorrecte");
+          }
+        }
+        function validarNumeroTlf(){
+          var NumTlf = document.getElementById("numTlf").value;
+          var exresionRegular =/^[8,9]\d-\d{3}-\d{2}-\d{2}$/;
+          if (exresionRegular.test(NumTlf)==true) {
+            alert("Correcte");
+          }else {
+            alert("Incorrecte");
+          }
+        }
+        function comprobacion(){
+          var introducirCodigoPostal = document.getElementById("codigoPostal").value;
+          var exresionRegular1 =/^([1-9]{2}|[0-9][1-9]|[1-9][0-9])[0-9]{3}$/;
+
+          var NumTlf = document.getElementById("numTlf").value;
+          var exresionRegular2 =/^[8,9]\d-\d{3}-\d{2}-\d{2}$/;
+          if (expresionRegular1.test(introducirCodigoPostal)==true && expresionRegular2.test(NumTlf)==true) {
+              return true;
+          }else {
+            var formulario = document.getElementById('formulario');
+            form.addEventListener('submit', function(event){
+              event.preventDefault();
+            });
+          }
+          /*from.addEventListener('submit', function(event){
+            event.preventDefault();
+            var cp=validarCodigoPostal();
+            var tlf=validarNumeroTlf();
+            if((cp.valueOf("true"))&&(tlf.valueOf("true"))){
+              this.submit();
+            }else{
+              alert("Formulario incorrecte");
+            }
+          });*/
+        }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <form class="well form-horizontal" action=" " method="post"  id="formulario">
+        <fieldset>
+          <!-- Nombre Formulario -->
+          <legend><center><h2>Registrate</h2></center></legend><br>
+          <!-- e-mail -->
+             <div class="form-group">
+               <label class="col-md-4 control-label">Email</label>
+               <div class="col-md-4 inputGroupContainer">
+                 <div class="input-group">
+                   <input id="email" placeholder="ej: gonzalo@mail.com" class="form-control"  type="email" required>
+                 </div>
+               </div>
+            </div>
+          <!-- Contraseña -->
+            <div class="form-group">
+              <label class="col-md-4 control-label" >Contraseña</label>
+              <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                  <input id="contrasena"  placeholder="Introduce Contraseña" class="form-control"  type="password" onchange="validezContrasena();" required>
+                </div>
+              </div>
+            </div>
+          <!-- Confirmar Contraseña-->
+            <div class="form-group">
+              <label class="col-md-4 control-label" >Confirmar Contraseña</label>
+              <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                  <input id="contrasenaConfirmar"  placeholder="Confirmar Contraseña" class="form-control"  type="password" oniput="validarMismaContrasena(this);" required>
+                    <meter id="contrasenaMeter" min="0" max="10" style="width:600px"></meter><br><br>
+                </div>
+              </div>
+            </div>
+            <!-- TLF-->
+            <div class="form-group">
+              <label class="col-md-4 control-label">Numero Telefono:</label>
+              <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                  <input class="form-control" placeholder="ej: +34 717165167" type="text" id="numTlf">
+                </div>
+              </div>
+            </div>
+            <!-- Codigo Postal-->
+            <div class="form-group">
+              <label class="col-md-4 control-label">Codigo Postal:</label>
+              <div class="col-md-4 inputGroupContainer">
+                <div class="input-group">
+                  <input class="form-control" placeholder="ej: 43700" type="text" id="codigoPostal">
+                </div>
+              </div>
+            </div>
+            <!-- Button -->
+            <div class="form-group">
+              <div class="col-md-4"><br>
+                <input type="submit" onclick="comprobacion();" value="Comprovar"><br><br>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

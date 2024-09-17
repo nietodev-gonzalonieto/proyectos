@@ -1,0 +1,6 @@
+Informatica	Descripcio Informatica
+Aplicacions	Descripcio Aplicacions
+Programacio	Descripcio Programacio
+Bases de dades	Descripcio Bases de dades
+Llenguatges	Descripcio Llenguatges
+Algorismica	Descripcio Algorismica

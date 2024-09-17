@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<style>
+  table,th,td{
+    border : 1px solid black;
+    border-collapse: collapse;
+  }
+  th,td {
+    padding:5px;
+  }
+</style>
+<body>
+ <h2>Agenda</h2>
+ <button type="button" onclick="loadDoc();">Enseñar Agenda</button><br><br>
+ <table id="tabla">
+ </table>
+
+  <script type="text/javascript">
+      function loadDoc() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+           myFunction(this);
+          }
+        };
+        xhttp.open("GET", "agenda.xml", true);
+        xhttp.send();
+        }
+
+        function myFunction(xml){
+          var i;
+          var xmlDoc = xml.responseXML;
+          var table = "<tr><th>Nom</th><th>Data Inicio</th><th>Data Final</th><th>Lloc</th></tr>";
+          var x = xmlDoc.getElementsByTagName("acte");
+          var d = xmlDoc.getElementsByTagName("data");
+          var l = xmlDoc.getElementsByTagName("lloc_simple");
+          for (var i = 0; i < x.length; i++) {
+            table +=
+            "<tr><td>"+
+            x[i].getElementsByTagName("nom")[0].childNodes[0].nodeValue +
+            "</td><td>"+
+            d[i].getElementsByTagName("data_inici")[0].childNodes[0].nodeValue+
+            "</td><td>"+
+            d[i].getElementsByTagName("data_fi")[0].childNodes[0]+
+            "</td><td>"+
+            x[i].getElementsByTagName("nom")[0].childNodes[0].nodeValue +
+            "</td></tr>";
+          }
+          document.getElementById("tabla").innerHTML = table;
+        }
+    </script>
+  </body>
+</html>

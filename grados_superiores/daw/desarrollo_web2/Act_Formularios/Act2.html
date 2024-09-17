@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Act2</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style>
+		h2{
+			text-align:left;
+		}
+	</style>
+	<script type="text/javascript">
+		function validarDniValidarLetra(){
+			var letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
+					var dni = document.getElementById("dni").value;
+					var exresionRegular = /^[0-9]{8,8}[A-Za-z]$/;
+					if (exresionRegular.test(dni) == true) {
+						var letra = dni.substring(8, 9).toUpperCase();
+						var numero = parseInt(dni.substring(0, 8));
+						var letraCorrecta = letras[numero % 23];
+						if(letra != letraCorrecta){
+							alert("La letra no es correcta");
+							return false;
+						}else {
+						alert("El DNI es correcto!");
+						return true;
+				}
+					}else {
+						alert("El DNI no es válido!");
+						return false;
+					}
+				}
+
+				function validarTlf(){
+					var telefono = document.getElementById("tlf").value;
+					var exresionRegular=/^[+]\d{2}?[ ]\d{3}\d{2}\d{2}\d{2}$/;
+					if(exresionRegular.test(telefono)==true){
+						alert('El telefon es correcto');
+						return true;
+					}else{
+						alert('El telefono no es válido');
+						return false;
+					}
+				}
+				window.onload = function () {
+						var dniId =document.getElementById('dni');
+						var tlfId=document.getElementById('tlf');
+						dniId.addEventListener('blur', rojo);
+						tlfId.addEventListener('focus', verde);
+						function rojo(){
+								this.style.backgroundColor = 'red';
+						}
+						function verde(){
+								this.style.backgroundColor = 'green';
+						}
+						var formulario = document.getElementById("formulario");
+						formulario.addEventListener('submit',validarForm);
+
+			function validarForm(event){
+				event.preventDefault();
+				var dni=validarDniValidarLetra();
+				var tlf=validarTlf();
+				if((dni.valueOf("true"))&&(tlf.valueOf("true"))){
+					this.submit();
+				}else{
+					alert("Formulari no válido, revisa los campos.");
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<form class="well form-horizontal" action=" " method="post"  id="formulario">
+			<fieldset>
+				<!-- Nombre Formulario -->
+				<legend><center><h2>Registro</h2></center></legend><br>
+				<!-- DNI -->
+					 <div class="form-group">
+						 <label for="nombre" class="col-md-4 control-label">DNI:</label>
+						 <div class="col-md-4 inputGroupContainer">
+							 <div class="input-group">
+								 <input type="text" name="dni_num" id="dni" placeholder="ej: 43901325G" class="form-control"required>
+							 </div>
+						 </div>
+					</div>
+				<!-- Teléfono -->
+					 <div class="form-group">
+						 <label for="nombre" class="col-md-4 control-label">Teléfono:</label>
+						 <div class="col-md-4 inputGroupContainer">
+							 <div class="input-group">
+								 <input type="text" id="tlf" placeholder="ej: +34 717 14 67 68" class="form-control" required>
+							 </div>
+						 </div>
+					</div>
+					<!-- Button -->
+					<div class="form-group">
+						<label class="col-md-4 control-label"></label>
+						<div class="col-md-4"><br>
+							<input type="submit" name="boton">
+					</div>
+				</div>
+			</div>
+		</body>
+</html>

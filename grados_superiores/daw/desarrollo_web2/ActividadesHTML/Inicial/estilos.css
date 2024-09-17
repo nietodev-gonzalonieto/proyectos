@@ -1,0 +1,20 @@
+html{
+	background-color: white;
+	}
+
+ul, ol{
+		list-style: none;
+
+		}	
+
+li a {
+			background-color:#f19f2e;
+			color: white;
+			text-decoration:none;
+			padding: 5px 10px;
+			display:block;
+}	
+
+p{
+	color: red;
+}	

@@ -1,0 +1,58 @@
+<!--M4_UF1_NF1_act2_EJERCICIO 2-->
+<?xml version=" 1.0 " encoding=" UTF-8 " standalone= " yes "?>
+	<socis>
+	<!--Aqui comença el soci 1 -->	
+		<soci sexe="masculi" professio="informatic" >
+			<nom>Gonzalo</nom>
+			<cognom1>Nieto</cognom1>
+			<cognom2>Maneu</cognom2>
+			<adreça>Barcelona</adreça>
+			<CP>46900</CP>
+			<dni>5373205J</dni>
+		</soci>
+	<!--Aqui comença el soci 2 -->	
+		<soci sexe="femeni" professio="proefessora" >
+			<nom>Maria</nom>
+			<cognom1>Toledo</cognom1>
+			<cognom2>Martinez</cognom2>
+			<adreça>MAdrid</adreça>
+			<CP>46930</CP>
+			<dni>5374234K</dni>
+		</soci>
+	<!--Aqui comença el soci 3 -->
+		<soci sexe="femeni" professio="doctora" >
+			<nom>Andrea</nom>
+			<cognom1>Morena</cognom1>
+			<cognom2>Tercera</cognom2>
+			<adreça>Barcelona</adreça>
+			<CP>46900</CP>
+			<dni>1426435O</dni>
+		</soci>
+	<!--Aqui comença el soci 4 -->	
+		<soci sexe="masculi" professio="informatic" >
+			<nom>Willy</nom>
+			<cognom1>Rex</cognom1>
+			<cognom2>Siete</cognom2>
+			<adreça>Sevilla</adreça>
+			<CP>25260</CP>
+			<dni>32623466P</dni>
+		</soci>
+	<!--Aqui comença el soci 5 -->	
+		<soci sexe="masculi" professio="esportista" >
+			<nom>Vicente</nom>
+			<cognom1>Nieto</cognom1>
+			<cognom2>Rodriguez</cognom2>
+			<adreça>Barcelona</adreça>
+			<CP>46900</CP>
+			<dni>2892193L</dni>
+		</soci>
+	<!--Aqui comença el soci 6 -->
+		<soci sexe="femeni" professio="farmaceutica" >
+			<nom>Carla</nom>
+			<cognom1>Rubia</cognom1>
+			<cognom2>Casado</cognom2>
+			<adreça>Barcelona</adreça>
+			<CP>46900</CP>
+			<dni>5373205J</dni>
+		</soci>
+	</socis>

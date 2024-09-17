@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Gonzalo Nieto – M6 - DAW</title>
+    <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+
+    <style>
+        div.cuadradoAzulRandom {
+          width: 50px;
+          height:50px;
+          background-color:blue;
+          position:fixed;
+        }
+        #cuadradoRojoFlechas{
+          width:50px;
+          height:50px;
+          background:red;
+          position: absolute;
+        }
+        #draggable{
+          width:50px;
+          height:50px;
+          background:yellow;
+          position: absolute;
+        }
+        #draggable { width: 150px; height: 150px; padding: 0.5em; }
+      </style>
+  </head>
+  <body>
+    <!--<div class='cuadradoAzulRandom'></div>-->
+    <!--<div id="cuadradoRojoFlechas"></div>-->
+    <div id="draggable" class="ui-widget-content"><p>Arrastrame :)</p></div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+    //4.1 Animacion aleatoria
+        /*$(document).ready(function(){
+          animacion('.cuadradoAzulRandom');
+        });
+        function crearPosicion(){
+          var altura = $(window).height() - 100;
+          var anchura = $(window).width() - 80;
+          var nuevaAltura = Math.floor(Math.random() * altura);
+          var nuevaAnchura = Math.floor(Math.random() * anchura);
+          return [nuevaAltura,nuevaAnchura];
+        }
+        function animacion(){
+          var nuevaPosicion = crearPosicion();
+          $(".cuadradoAzulRandom").animate({ top: nuevaPosicion[0], left: nuevaPosicion[1] }, 1000,
+          function(){
+            animacion(".cuadradoAzulRandom");
+          });
+        };*/
+
+    //4.2  y  4.3 Flechas teclado
+       /*$('#cuadradoRojoFlechas').css('position', 'relative');
+          $(document).keydown(function(tecla){
+          if (tecla.keyCode == 37) {
+              $('#cuadradoRojoFlechas').css("left", "-=10");
+          }else if(tecla.keyCode == 38) {
+              $('#cuadradoRojoFlechas').css("top","-=10");
+          }else if(tecla.keyCode == 39){
+              $('#cuadradoRojoFlechas').css("left","+=10");
+          }else if(tecla.keyCode == 40){
+              $('#cuadradoRojoFlechas').css("top","+=10");
+          }
+      });*/
+    //4.4 draggable
+      $( function() {
+        $( "#draggable" ).draggable();
+      } );
+
+    </script>
+  </body>
+</html>

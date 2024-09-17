@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Comparador</title>
+	<script src="archivo1.js"></script>
+</head>
+<body onload="checkCookie()">
+
+	<h1>Comparador de Ordenadores</h1>
+	<form id="formulario" method="post" action="">
+		<p>Marca: <input type="text" placeholder="Marca" id="marca" class="stored"></input></p>
+		<p>Model: <input type="text" placeholder="Modelo" id="modelo" class="stored"></input></p>
+		<p>CPU: <input type="text" placeholder="Cpu" id="cpu" class="stored"></input></p>
+		<p>RAM: <input type="text" placeholder="Ram" id="ram" class="stored"></input> GB</p>
+		<p>Tipus Disc Dur: <input type="text" placeholder="DisocMarca" id="discoMarca" class="stored"></input></p>
+		<p>Capacitat disc dur: <input type="text" placeholder="DiscoCapacidad" id="discoCapacidad"
+				class="stored"></input> GB</p>
+		<p>Mida de la pantalla: <input type="text" placeholder="Pantalla" id="pantalla" class="stored"></input></p><br>
+
+
+	</form>
+	<input type="button" class="boton" value="Guardar" onclick="guardarStorage()"></input>
+	<!--Esto envia los datos que se guardan para luego poderse comparar-->
+	<input type="button" class="boton" value="Actualizar" onclick="actualizar()"></input>
+	<input type="button" class="boton" value="Generar Tabla" onclick="crearTabla()"></input>
+	<input type="button" class="boton" value="Borrar Local" onclick="borrarLocal()"></input>
+	<!--Esto genera una tabla-->
+	<input type="button" class="boton" value="Cerrar Sesion" onclick="borrarCookie()"></input>
+	<!--Con esto se cerrara la sesion del usuario,eliminando las cookies-->
+	<br><br><br>
+	<table border="1px" id="tablaAutomatica">
+
+	</table>
+
+
+</body>
+
+</html>

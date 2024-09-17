@@ -1,0 +1,225 @@
+<!--
+El efecto que se debe configurar cuando el cursor
+ del ratón se sitúe encima de una línea del formulario.
+El efecto que se debe configurar cuando un control del
+ formulario reciba el foco del teclado.
+ 
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Ejemplo de formulario maquetado</title>
+    <style type="text/css">
+      body {
+        font-size: 10px;
+        background: grey;
+      }
+
+      #principal {
+        background: #FFF;
+        margin: 1em auto;
+        padding: 1em;
+        width: 768px;
+      }
+
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      ul li {
+        border-top: 1px solid #CCC;
+        padding: 1em;
+        width: auto;
+        overflow: hidden;
+      }
+
+
+      ul li label.titulo {
+        float: left;
+        width: 150px;
+        text-align: right;
+      }
+
+      ul li div.divitis {
+        margin-left: 160px;
+      }
+
+
+      ul li.boton {
+        border-top: 2px;
+        clear: both;
+        float: none;
+        padding: 1em 0;
+        text-align: right;
+        width: 100%;
+      }
+
+      ul li.boton input {
+        font-size: 18px;
+      }
+
+
+      ul li label.titulo {
+        font-weight: bold;
+      }
+
+      ul li div span {
+        float: left;
+        padding: 0.3em 0;
+      }
+
+      ul li div span.completo {
+        width: 100%;
+      }
+
+      ul li div span.mitad {
+        width: 50%;
+      }
+
+      ul li div span.tercio {
+        width: 40%;
+      }
+
+      ul li div span.dostercios {
+        width: 60%;
+      }
+
+
+      ul li div span label {
+        display: block;
+        font-size: 12px;
+
+      }
+
+      ul li:hover {
+        background-color:yellow;
+      }
+
+      ul li.boton:hover {
+        background-color: transparent;
+      }
+
+
+      ul li input, ul li select {
+        border: 2px solid transparent;
+        border-bottom: 2px solid black;
+      }
+
+      ul li.boton input {
+        border: 2px;
+      }
+
+      ul li input:focus, ul li select:focus {
+        border: 2px;
+      }
+      </style>
+      </head>
+
+      <body>
+        <div id="principal">
+
+          <h1>Formulario de registro</h1>
+
+          <form method="post" action="#">
+          <ul>
+          <li>
+            <label class="titulo" for="nombre">Nombre y apellidos</label>
+
+            <div class="divitis">
+              <span class="completo">
+                <input id="nombre" name="nombre" value="" />
+                <label for="nombre">Nombre</label>
+              </span>
+
+              <span class="completo">
+                <input id="apellido1" name="apellido1" value="" />
+                <label for="apellido1">Primer apellido</label>
+              </span>
+
+              <span class="completo">
+                <input id="apellido2" name="apellido2" value="" />
+                <label for="apellido2">Segundo apellido</label>
+              </span>
+            </div>
+          </li>
+
+          <li>
+            <label class="titulo" for="direccion">Dirección</label>
+
+            <div class="divitis">
+              <span class="completo">
+                <input id="direccion" name="direccion" value="" />
+                <label for="direccion">Calle, número, piso, puerta</label>
+              </span>
+
+              <span class="tercio">
+                <input id="cp" name="cp" value="" />
+                <label for="cp">Código postal</label>
+              </span>
+
+              <span class="dostercios">
+                <input id="municipio" name="municipio" value="" />
+                <label for="municipio">Municipio</label>
+              </span>
+
+              <span class="tercio">
+                <select id="provincia" name="provincia">
+                  <option value=""></option>
+                  <option value="provincia1">Provincia 1</option>
+                  <option value="provincia2">Provincia 2</option>
+                  <option value="provincia3">Provincia 3</option>
+                </select>
+                <label for="provincia">Provincia</label>
+              </span>
+
+              <span class="dostercios">
+                <select id="pais" name="pais">
+                  <option value=""></option>
+                  <option value="p1">País 1</option>
+                  <option value="p2">País 2</option>
+                  <option value="p3">País 3</option>
+                </select>
+                <label for="pais">País</label>
+              </span>
+            </div>
+          </li>
+
+          <li>
+            <label class="titulo" for="correo">Correo</label>
+
+            <div class="divitis">
+              <span class="completo">
+                <input id="correo" name="correo" value="" />
+              </span>
+            </div>
+          </li>
+
+          <li>
+            <label class="titulo" for="fijo">Teléfono</label>
+
+            <div class="divitis">
+              <span class="mitad">
+                <input id="fijo" name="fijo" value="" />
+                <label for="fijo">Fijo</label>
+              </span>
+
+              <span class="mitad">
+                <input id="tlf" name="tlf" value="" />
+                <label for="tlf">Móvil</label>
+              </span>
+            </div>
+          </li>
+
+          <li class="boton">
+            <input id="registarse" type="submit" value="Registrarse" />
+          </li>
+
+          </ul>
+          </form>
+          </div>
+</body>
+</html>

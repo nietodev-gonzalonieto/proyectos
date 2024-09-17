@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Act 4-Gonzalo Nieto</title>
+	<meta charset="UTF-8">
+	<script type="text/javascript">
+		function mostrar(event) {
+		  var evento =event|| window.event;
+		  var cordenadaX = evento.pageX;//de izquierda a derecha
+		  var cordenadaY = evento.pageY;//de arriba a bajo
+		  var cordenadaFinal="Cordenada: " + cordenadaX + " X , " + cordenadaY + " Y";
+		  document.getElementById("cordenadaB").innerHTML=cordenadaFinal;
+
+			//superior izquierda
+			if (cordenadaY<350 && cordenadaX<750) {
+				document.getElementById("cordenadaA").innerHTML="pantalla superior izquierda";
+			}
+			//superior derecha
+			if (cordenadaY<350 && cordenadaX>750) {
+				document.getElementById("cordenadaA").innerHTML="pantalla superior derecha";
+			}
+			//inferior izquierda
+			if (cordenadaY>350 && cordenadaX<750) {
+				document.getElementById("cordenadaA").innerHTML="pantalla inferior izquierda";
+			}
+			//inferior derecha
+			if (cordenadaY>350 && cordenadaX>750) {
+				document.getElementById("cordenadaA").innerHTML="pantalla inferior derecha";
+			}
+		}
+		document.onclick = mostrar;
+	</script>
+</head>
+<body>
+	<p id="cordenadaA"></p><!--Ubicación de donde se clica con el raton-->
+	<p id="cordenadaB"></p><!--Coordenada X y Coordenada Y -->
+</body>
+</html>

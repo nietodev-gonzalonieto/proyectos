@@ -1,0 +1,130 @@
+<!--
+Esta página posee un diseño adaptable con tres puntos de ruptura:
+
+Hasta 600 px: un diseño a una columna.
+A partir de 600 px y hasta 1200 px: un diseño a dos columnas.
+A partir de 1200 px: un diseño a tres columnas.
+Fíjate bien en las capturas de pantalla e intenta lograr el mismo resultado.
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Curriculum Vitae de Bruce Wayne</title>
+    <style>
+
+/* Diseño a tres columnas */
+      @media (min-width: 1201px) {
+
+        #datosPersonales {
+          float: left;
+      	width: 30%;
+        }
+
+        #formacionExperiencia {
+          float: left;
+      	width: 70%;
+        }
+
+        #formacionAcademica {
+          float: left;
+      	width: 50%;
+        }
+
+        #experienciaLaboral {
+          float: left;
+      	width: 50%;
+        }
+      }
+
+/* Diseño a dos columnas */
+      @media (min-width: 601px) and (max-width: 1200px) {
+
+        #datosPersonales {
+          float: left;
+      	width: 30%;
+        }
+
+        #formacionExperiencia {
+          float: left;
+      	width: 70%;
+        }
+
+        #datosPersonales ul {
+          list-style-type: none;
+      	padding: 0;
+        }
+
+        #datosPersonales li + li {
+          margin-top: 10px;
+        }
+
+        #datosPersonales li strong {
+          display: block;
+        }
+      }
+
+/* Diseño a una columna */
+      @media (max-width: 600px) {
+
+        h1 {
+          font-size: 1.5em;
+        }
+
+        h2 {
+
+      	   border-bottom: 1px;
+             font-size: 1em;
+        }
+
+        ul {
+          list-style-type: none;
+        }
+      }
+
+      #formacionAcademica li, #experienciaLaboral li {
+        color:blue;
+      }
+
+      #formacionAcademica li strong, #experienciaLaboral li strong {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+
+      <h1>Curriculum Vitae de Bruce Wayne</h1>
+
+      <div id="datosPersonales">
+        <h2>Datos personales</h2>
+        <ul>
+          <li>Nombre completo: <strong>Bruce Wayne</strong></li>
+          <li>Fecha de nacimiento: <strong>1/5/1939</strong></li>
+          <li>Lugar de nacimiento: <strong>Gotham City</strong></li>
+        </ul>
+      </div>
+
+      <div id="formacionExperiencia">
+
+        <div id="formacionAcademica">
+          <h2>Formación académica</h2>
+          <ul>
+            <li>1956-1961: <strong>Universidad del Espantapájaros</strong></li>
+            <li>1952-1956: <strong>Instituto de Dos Caras</strong></li>
+            <li>1944-1952: <strong>Escuela Primaria del Joker</strong></li>
+          </ul>
+        </div>
+
+        <div id="experienciaLaboral">
+          <h2>Experiencia laboral</h2>
+          <ul>
+            <li>1975-1985: <strong>En el paro</strong></li>
+            <li>1965-1975: <strong>Cazavillanos y demás chusma</strong></li>
+            <li>1962-1965: <strong>Aprendiz de superhéroe</strong></li>
+          </ul>
+        </div>
+
+      </div>
+
+</body>
+</html>

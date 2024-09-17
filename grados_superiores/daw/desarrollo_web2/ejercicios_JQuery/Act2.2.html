@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Gonzalo Nieto – M6 - DAW</title>
+  </head>
+  <body>
+    <ul>
+      <li>Primera li.</li>
+      <li>Segundo li.</li>
+      <li>Tercer li.</li>
+      <li>Cuarto li.</li>
+    </ul>
+  <input type="button" id="boton1" value="Eliminar lista" onclick="eliminarLista()">
+  <input type="button" id="boton2" value="Restaurar elements" onclick="restaurarElements()">
+  <input type="button" id="boton3" value="Añadir elemento" onclick="anadirElemento()">
+  <input type="button" id="boton4" value="Añadir elemento al principio" onclick="anadirElementoPrincipio()">
+  <input type="button" id="boton5" value="Eliminar último elemento." onclick="eliminarElementoFinal()">
+  <input type="button" id="boton6" value="Eliminar el primer elemento." onclick="eliminarElementoPrincipio()">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+
+      function eliminarLista() {
+        $("ul").empty();
+      }
+
+      function restaurarElements() {
+        $("ul").html('<li>Primer item.</li><li> Segundo item.</li > <li>Tercer item.</li><li>Cuarto item.</li>');
+      }
+
+      function anadirElemento() {
+      let x = $("ul");
+      x.append("<li>elemento anadido</li>");
+      }
+
+      function anadirElementoPrincipio() {
+       $("ul").prepend("<li>elemento añadido principio</li>");
+      }
+
+      function eliminarElementoFinal() {
+        $("ul").children().last().remove();;
+      }
+
+      function eliminarElementoPrincipio() {
+        $("ul").children().first().remove();
+      }
+    </script>
+  </body>
+</html>

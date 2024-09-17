@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Act 5-Gonzalo Nieto</title>
+    <meta charset="UTF-8">
+  </head>
+  <body id="cos">
+     <textarea id="area"></textarea>
+     <script type="text/javascript">
+       var element1 = document.getElementById('cos');//recull el id del body
+       var element2 = document.getElementById('area');//recull el id del textarea
+      //element1 correspon al body
+       element1.addEventListener('keypress', notificaObservador1);//t'ho mostra quan s'esta prement la tecla
+       element1.addEventListener('keydown', notificaObservador1);//t'ho mostra quan es prem la tecla
+       element1.addEventListener('keyup', notificaObservador1);//t'ho mostra quan es deixa de premer la tecla
+      //element2 correspon al textarea
+       element2.addEventListener('keypress', notificaObservador2);//t'ho mostra quan s'esta prement la tecla
+       element2.addEventListener('keydown', notificaObservador2);//t'ho mostra quan es prem la tecla
+       element2.addEventListener('keyup', notificaObservador2);//t'ho mostra quan es deixa de premer la tecla
+       //aquesta funció passa quan en el body (fora del text area) prems una tecla però també pasa quan ho fas en el text area
+       function notificaObservador1(e) {
+       console.log("Desde el <body> s'ha disparat un event de tipus: ", e.type); //Et mostra per consola el tipus del esdeveniment per teclat
+       }
+       //aquesta funció passa únicament quan prems una tecla dintre del textarea.
+       function notificaObservador2(e) {
+       console.log("Desde el <textarea> s'ha disparat un event de tipus: ", e.type);//Et mostra per consola el tipus del esdeveniment per teclat
+       }
+     </script>
+  </body>
+</html>

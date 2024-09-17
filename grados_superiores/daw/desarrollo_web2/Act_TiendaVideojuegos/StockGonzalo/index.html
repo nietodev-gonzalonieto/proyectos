@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Ejercicio</title>
+    <meta charset="UTF-8">
+    <script src="consolas.js"></script>
+    <script src="grafica.js"></script>
+    <script src="script.js"></script>
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+  <form>
+    <h1>TIENDA DE VIDEOJUEGOS</h1>
+      <input type="radio" id="comprador" name="usuario" checked>
+      <label for="comprador">Comprador</label>
+      <input type="radio" id="vendedor" name="usuario">
+      <label for="vendedor">Vendedor</label>
+
+      <h2>Lista de Juegos</h2>
+        <input type="radio" id="ordenadoNombre" name="orden" checked>
+        <label for="ordenadoNombre">Ordenar por Nombre</label>
+        <input type="radio" id="ordenadoStock" name="orden">
+        <label for="ordenadoStock">Ordenar por Stock</label>
+        <ul id="listaJuegos"></ul>
+
+      <h2>Lista de Consolas</h2>
+        <input type="radio" id="ordenadoNombreConsola" name="ordenConsola" checked>
+        <label for="ordenadoNombreConsola">Ordenar por Nombre</label>
+        <input type="radio" id="ordenadoStockConsola" name="ordenConsola">
+        <label for="ordenadoStockConsola">Ordenar por Stock</label>
+        <ul id="listaConsolas"></ul>
+
+      <div id="insertarJuego">
+          <h2>Insertar Juego</h2>
+          <label for="nombre">Nombre:</label> <input type="text" id="nombre"><br><br>
+          <label for="creador">Creador:</label> <input type="text" id="creador"><br><br>
+          <label for="tipo">Tipo:</label> <input type="text" id="tipo"><br><br>
+          <label for="stock">Stock:</label> <input type="number" id="stock"><br><br>
+          <label for="precio">Precio:</label> <input type="number" id="precio"><br><br>
+          <input type="button" id="insertar" value="Insertar">
+      </div>
+
+      <div id="incrementarStock">
+          <h2>Incrementar Stock de Juegos</h2>
+          <label for="numero">Numero:</label> <input type="number" id="numero"><br><br>
+          <label for="incremento">Incremento:</label> <input type="number" id="incremento"><br><br>
+          <input type="button" id="incrementar" value="Incrementar">
+      </div>
+
+      <div id="descatalogarJuego">
+          <h2>Descatalogar Juego</h2>
+          <label for="numeroBorrar">Numero:</label> <input type="number" id="numeroBorrar"><br><br>
+          <input type="button" id="descatalogar" value="Descatalogar">
+      </div>
+      <div class="salto"></div>
+
+      <div id="comprarJuego">
+          <h2>Comprar Juego</h2>
+          <label for="numeroComprar">Numero:</label> <input type="number" id="numeroComprar"><br><br>
+          <input type="button" id="comprar" value="Comprar">
+      </div>
+
+      <div id="insertarConsola">
+          <h2>Insertar Consola</h2>
+          <label for="nombreConsola">Nombre:</label> <input type="text" id="nombreConsola"><br><br>
+          <label for="gpu">GPU:</label><input type="number" id="gpu"><br><br>
+          <label for="cpu">CPU:</label> <input type="number" id="cpu"><br><br>
+          <label for="ram">RAM:</label> <input type="number" id="ram"><br><br>
+          <label for="ssd">SSD:</label> <input type="number" id="ssd"><br><br>
+          <label for="stockConsola">Stock:</label> <input type="number" id="stockConsola"><br><br>
+          <label for="precioConsola">Precio:</label> <input type="number" id="precioConsola"><br><br>
+          <label>Color Barra Grafica:</label>
+          <select id="color">
+            <option value="lightgreen">Verde Flojo</option>
+            <option value="red">Rojo</option>
+            <option value="green">Verde</option>
+            <option value="magenta">Lila</option>
+            <option value="blue">Azul</option>
+            <option value="yellow">Amarillo</option>
+          </select><br><br>
+          <input type="button" id="insertarConsolaBoton" value="Insertar">
+      </div>
+
+      <div id="incrementarStockConsola">
+          <h2>Incrementar Stock de Consolas</h2>
+          <label for="numeroConsola">Numero:</label> <input type="number" id="numeroConsola"><br><br>
+          <label for="incrementoConsola">Incremento:</label> <input type="number" id="incrementoConsola"><br><br>
+          <input type="button" id="incrementarConsola" value="Incrementar">
+      </div>
+
+      <div id="descatalogarConsola">
+          <h2>Descatalogar Consolas</h2>
+          <label for="numeroBorrarConsola">Numero:</label> <input type="number" id="numeroBorrarConsola"><br><br>
+          <input type="button" id="descatalogarConsolaBoton" value="Descatalogar">
+      </div>
+
+      <div id="comprarConsola">
+          <h2>Comprar Consola</h2>
+          <label for="numeroComprarConsola">Numero:</label> <input type="number" id="numeroComprarConsola"><br><br>
+          <input type="button" id="comprarConsolaBoton" value="Comprar">
+      </div>
+      <div class="salto"></div>
+      <div id="grafica">
+        <canvas id="canvas" width="600" height="600" style="border:1px solid"></canvas>
+      </div>
+    </form>
+  </body>
+</html>

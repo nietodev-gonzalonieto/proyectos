@@ -1,0 +1,33 @@
+*{
+  text-align: center;
+  font-family: Arial;
+}
+body{
+  padding: 0 24% ;
+  background-color: #CCE9FF;
+}
+h1{
+  font-weight: bold;
+  font-size: 40px;
+  color:#CCE9FF;
+  background-color:black;
+  padding: 40px;
+}
+ul{
+  list-style:none;
+}
+div{
+  float:left;
+  margin: 10px;
+}
+.salto{
+  clear: both;
+
+}
+canvas{
+  background-color: white;
+  margin-left: 30%;
+}
+#comprarConsola{
+  float:right;
+}

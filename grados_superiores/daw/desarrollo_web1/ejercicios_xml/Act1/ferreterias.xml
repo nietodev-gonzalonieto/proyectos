@@ -1,0 +1,239 @@
+<!--M4_UF1_NF1_act2_EJERCICIO 3-->
+<?xml version=" 1.0 " encoding=" UTF-8 " standalone= " yes "?>
+	<ferreterias>
+	<!--Aqui comença ferreteria 1 -->
+		<ferreteria>
+			<nombre>Ferreteria LLuis</nombre>
+				<eines>
+					<clau_anglesa seccio="claus_ang">
+						<codi_producte>14567P</codi_producte>
+						<model_producte>3Y</model_producte>
+						<codi_operador>1242148Z</codi_operador>
+					</clau_anglesa>
+				</eines>
+				<fusta>	
+					<tabló_roble seccio="tablo_f">
+						<codi_producte>11231P</codi_producte>
+						<model_producte>marro_fosc_6IO</model_producte>
+						<codi_operador>1123Z</codi_operador>
+					</tabló_roble>
+				</fusta>
+				<metall>	
+					<tablo_alumini seccio="tablo_m">
+						<codi_producte>92102P</codi_producte>
+						<model_producte>model19ZG</model_producte>
+						<codi_operador>102294P</codi_operador>
+					</tablo_alumini>
+				</metall>
+				<piscina>	
+					<filtre_piscina  seccio="filtres">
+						<codi_producte>12304Q</codi_producte>
+						<model_producte>3283max</model_producte>
+						<codi_operador>131392P</codi_operador>
+					</filtre_piscina>
+				</piscina>
+				<vidre>
+					<tabló_de_cristall seccio="tablo_c">
+						<codi_producte>1safa0</codi_producte>
+						<model_producte>traslucid_34</model_producte>
+						<codi_operador>ladsa21</codi_operador>
+					</tabló_de_cristall>
+				</vidre>
+		</ferreteria>
+	<!--Aqui comença ferreteria 2 -->
+		<ferreteria>
+			<nombre>Ferreteria Pepe</nombre>
+				<eines>			
+					<clau_anglesa seccio="claus_ang">
+						<codi_producte>132391Ñ</codi_producte>
+						<model_producte>32ULTRA</model_producte>
+						<codi_operador>OWPQ124</codi_operador>
+					</clau_anglesa>
+				</eines>
+				<fusta>	
+					<tabló_roble seccio="tablo_f">
+						<codi_producte>2120</codi_producte>
+						<model_producte>negre_fosc_6IO</model_producte>
+						<codi_operador>1131313Z</codi_operador>
+					</tabló_roble>
+				</fusta>
+				<metall>	
+					<tablo_alumini seccio="tablo_m">
+						<codi_producte>931349P</codi_producte>
+						<model_producte>model777G</model_producte>
+						<codi_operador>1KR4012</codi_operador>
+					</tablo_alumini>
+				</metall>
+				<piscina>	
+					<filtre_piscina  seccio="filtres">
+						<codi_producte>FKEI125</codi_producte>
+						<model_producte>limpiador33</model_producte>
+						<codi_operador>9320314N</codi_operador>
+					</filtre_piscina>
+				</piscina>
+				<vidre>	
+					<tabló_de_cristall seccio="tablo_c">
+						<codi_producte>3O21331</codi_producte>
+						<model_producte>traslucid_99</model_producte>
+						<codi_operador>K2O3PÑS</codi_operador>
+					</tabló_de_cristall>
+				</vidre>
+		</ferreteria>
+	<!--Aqui comença ferreteria 3 -->	
+		<ferreteria>
+			<nombre>Ferreteria Mariano</nombre>
+				<eines>	
+					<clau_anglesa seccio="claus_ang">
+						<codi_producte>3213PD</codi_producte>
+						<model_producte>321KK</model_producte>
+						<codi_operador>132IFDS</codi_operador>
+					</clau_anglesa>
+				</eines>
+				<fusta>	
+					<tabló_roble seccio="tablo_f">
+						<codi_producte>DFSFI13</codi_producte>
+						<model_producte>blau_fosc_6IO</model_producte>
+						<codi_operador>FOI321</codi_operador>
+					</tabló_roble>
+				</fusta>
+				<metall>	
+					<tablo_alumini seccio="tablo_m">
+						<codi_producte>FDSI3123</codi_producte>
+						<model_producte>model32913</model_producte>
+						<codi_operador>FPJEW23</codi_operador>
+					</tablo_alumini>
+				</metall>
+				<piscina>	
+					<filtre_piscina  seccio="filtres">
+						<codi_producte>GDPWIEP</codi_producte>
+						<model_producte>PISXXINA2931</model_producte>
+						<codi_operador>DSPFK21</codi_operador>
+					</filtre_piscina>
+				</piscina>
+				<vidre>	
+					<tabló_de_cristall seccio="tablo_c">
+						<codi_producte>FSKFI13</codi_producte>
+						<model_producte>traspartent_32</model_producte>
+						<codi_operador>E1I32</codi_operador>
+					</tabló_de_cristall>
+				</vidre>		
+		</ferreteria>
+	<!--Aqui comença ferreteria 4 -->	
+		<ferreteria>
+			<nombre>Ferreteria Luciano</nombre>
+				<eines>
+					<clau_anglesa seccio="claus_ang">
+						<codi_producte>FDSKI12</codi_producte>
+						<model_producte>213LOL</model_producte>
+						<codi_operador>OADAK13</codi_operador>
+					</clau_anglesa>
+				</eines>
+				<fusta>	
+						<tabló_roble seccio="tablo_f">
+						<codi_producte>OSADAGL</codi_producte>
+						<model_producte>vermell_fosc_6IO</model_producte>
+						<codi_operador>DKSSAO1</codi_operador>
+					</tabló_roble>
+				</fusta>
+				<metall>	
+					<tablo_alumini seccio="tablo_m">
+						<codi_producte>9DSODS</codi_producte>
+						<model_producte>model_912</model_producte>
+						<codi_operador>122913L</codi_operador>
+					</tablo_alumini>
+				</metall>
+				<piscina>
+					<filtre_piscina  seccio="filtres">
+						<codi_producte>SADKDSA12</codi_producte>
+						<model_producte>K3000</model_producte>
+						<codi_operador>DASIDAP</codi_operador>
+					</filtre_piscina>
+				</piscina>
+				<vidre>	
+					<tabló_de_cristall seccio="tablo_c">
+						<codi_producte>DSOADL</codi_producte>
+						<model_producte>DSAODAK</model_producte>
+						<codi_operador>DSAPDAD</codi_operador>
+					</tabló_de_cristall>
+				</vidre>	
+		</ferreteria>
+	<!--Aqui comença ferreteria 5 -->	
+		<ferreteria>
+			<nombre>Ferreteria la Yaya</nombre>
+				<eines>
+					<clau_anglesa seccio="claus_ang">
+						<codi_producte>1DADO21</codi_producte>
+						<model_producte>97GG</model_producte>
+						<codi_operador>1SAKD</codi_operador>
+					</clau_anglesa>
+				</eines>
+				<fusta>	
+					<tabló_roble seccio="tablo_f">
+						<codi_producte>1ÀKD</codi_producte>
+						<model_producte>marro_fosc_231</model_producte>
+						<codi_operador>1SADO</codi_operador>
+					</tabló_roble>
+				</fusta>
+				<metall>	
+					<tablo_alumini seccio="tablo_m">
+						<codi_producte>DASDO123</codi_producte>
+						<model_producte>modeDSADA</model_producte>
+						<codi_operador>EQELQW</codi_operador>
+					</tablo_alumini>
+				</metall>
+				<piscina>	
+					<filtre_piscina  seccio="filtres">
+						<codi_producte>1DSADA</codi_producte>
+						<model_producte>3283maxMAX</model_producte>
+						<codi_operador>131392P13</codi_operador>
+					</filtre_piscina>
+				</piscina>
+				<vidre>	
+					<tabló_de_cristall seccio="tablo_c">
+						<codi_producte>1safa310</codi_producte>
+						<model_producte>opac_332</model_producte>
+						<codi_operador>lads213a21</codi_operador>
+					</tabló_de_cristall>
+				</vidre>	
+		</ferreteria>
+	<!--Aqui comença ferreteria 6 -->	
+		<ferreteria>
+			<nombre>Ferreteria Maria</nombre>
+				<eines>
+					<clau_anglesa seccio="claus_ang">
+						<codi_producte>14eq567P</codi_producte>
+						<model_producte>123Y</model_producte>
+						<codi_operador>1243212148Z</codi_operador>
+					</clau_anglesa>
+				</eines>
+				<fusta>	
+					<tabló_roble seccio="tablo_f">
+						<codi_producte>11SF231P</codi_producte>
+						<model_producte>negre_fosc_6213</model_producte>
+						<codi_operador>1123TEZ</codi_operador>
+					</tabló_roble>
+				</fusta>
+				<metall>	
+					<tablo_alumini seccio="tablo_m">
+						<codi_producte>9210WER2P</codi_producte>
+						<model_producte>model19EWZG</model_producte>
+						<codi_operador>102294QWEP</codi_operador>
+					</tablo_alumini>
+				</metall>
+				<piscina>	
+					<filtre_piscina  seccio="filtres">
+						<codi_producte>12304Q</codi_producte>
+						<model_producte>3283max</model_producte>
+						<codi_operador>1313GF92P</codi_operador>
+					</filtre_piscina>
+				</piscina>
+				<vidre>	
+					<tabló_de_cristall seccio="tablo_c">
+						<codi_producte>1saf221a0</codi_producte>
+						<model_producte>traslucid_21</model_producte>
+						<codi_operador>ladSDsa21</codi_operador>
+					</tabló_de_cristall>
+				</vidre>	
+		</ferreteria>
+	</ferreterias>	
+</xml>

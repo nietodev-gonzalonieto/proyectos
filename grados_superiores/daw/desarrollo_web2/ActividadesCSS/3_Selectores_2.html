@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Ejercicio de selectores</title>
+    <style type="text/css">
+      /*Primero pinto las letras por fila ,haciendo ids aunque también se podria hacer con class*/
+        #fila_uno{
+                  color: teal;
+                }
+        #fila_dos{
+                  color: red;
+        }
+
+        #fila_tres{
+                   color: blue;
+        }
+
+        #fila_cuatro{
+                     color: orange;
+        }
+
+        #fila_cinco{
+                    color: purple;
+        }
+
+        #fila_seis{
+                   color: olive;
+        }
+
+        #fila_siete{
+                    color: fuchsia;
+        }
+
+        #fila_ocho{
+                   color: green;
+        }
+      /*Ahora pintare columna por columna*/
+
+        /*La primera columna no se pinta*/
+
+        td + td {     /*esta es la segunda columna*/
+                  background-color: red;
+                }
+
+        td + td +td{    /*esta es la tercera columna*/
+                    background-color: green;
+                    }
+
+        td + td + td + td {      /*esta es la cuarta columna*/
+                            background-color: blue;
+                          }
+
+    </style>
+  </head>
+  <body>
+    <table border="1">
+      <!--pongo id a cada fila para poder aplicar el css-->
+        <!--faltaba un td para que fueran 4 columnas, lo he tenido que añadir-->
+      <tr id="fila_uno">
+        <td>teal</td>
+        <td>teal</td>
+        <td>teal</td>
+        <td>teal</td>
+      </tr>
+      <tr id="fila_dos">
+        <td>red</td>
+        <td>red</td>
+        <td>red</td>
+        <td>red</td>
+      </tr>
+      <tr id="fila_tres">
+        <td>blue</td>
+        <td>blue</td>
+        <td>blue</td>
+        <td>blue</td>
+      </tr>
+      <tr id="fila_cuatro">
+        <td>orange</td>
+        <td>orange</td>
+        <td>orange</td>
+        <td>orange</td>
+      </tr>
+      <tr id="fila_cinco">
+        <td>purple</td>
+        <td>purple</td>
+        <td>purple</td>
+        <td>purple</td>
+      </tr>
+      <tr id="fila_seis">
+        <td>olive</td>
+        <td>olive</td>
+        <td>olive</td>
+        <td>olive</td>
+      </tr>
+      <tr id="fila_siete">
+        <td>fuchsia</td>
+        <td>fuchsia</td>
+        <td>fuchsia</td>
+        <td>fuchsia</td>
+      </tr>
+      <tr id="fila_ocho">
+        <td>green</td>
+        <td>green</td>
+        <td>green</td>
+        <td>green</td>
+      </tr>
+    </table>
+  </body>
+</html>

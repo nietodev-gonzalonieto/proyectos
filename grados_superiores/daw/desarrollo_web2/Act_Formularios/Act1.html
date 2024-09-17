@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Act 1-Gonzalo Nieto</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+      h2{
+        text-align:left;
+      }
+    </style>
+    <script type="text/javascript" language="JavaScript">
+      function cambiaColor(celda) {
+          if (celda.value=='') {
+              if ((document.all)||(document.getElementById)) {
+                  celda.style.backgroundColor = 'blue';
+              }
+          } else {
+              if ((document.all)||(document.getElementById)) {
+                  celda.style.backgroundColor = 'green';
+              }
+          }
+      }
+    </script>
+  </head>
+  <body>
+    <form action="">
+      <div class="container">
+        <form class="well form-horizontal" action=" " method="post"  id="formulario">
+          <fieldset>
+            <!-- Nombre Formulario -->
+            <legend><center><h2>Act1</h2></center></legend><br>
+            <!-- e-mail -->
+               <div class="form-group">
+                 <div class="col-md-4 inputGroupContainer">
+                   <div class="input-group">
+                     <input onclick="cambiaColor(this)" onblur="cambiaColor(this)" onfocus="cambiaColor(this)" onchange="cambiaColor(this)"value="" class="form-control">
+                   </div>
+                 </div>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

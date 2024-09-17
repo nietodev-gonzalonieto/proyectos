@@ -1,0 +1,23 @@
+^[A-C]\w+\ses\s\w+
+
+^ : Se utiliza para encontrar el comienzo de una línea.
+[A-C] : Coincidan dentro del rango de A hasta C.
+\w : Coincide con los carácter alfanumérico Ingles, pero sin acentos ni
+     caracteres propios como al "ç".
+\s : Coincide con caracteres de espacio en blanco, incluye tabulaciones y saltos de línea
+e : Tiene que contener el carácter "e"
+s : Tiene que contener el carácter "s"
+\s : Coincide con caracteres de espacio en blanco, incluye tabulaciones y saltos de línea
+\w :Coincide con los carácter alfanumérico Ingles, pero sin acentos ni
+     caracteres propios como al "ç".
++ : Te permite añadir el carácter 1 o mas veces
+
+a. Adrian es alt -> Si fa match
+
+b. Paco es inteligent -> No fa match
+
+c. no es no -> No fa match
+
+d. Ara es el moment -> Si fa match
+
+f. Aleix no hi es -> No fa match

@@ -1,0 +1,63 @@
+<?xml version=" 1.0 " encoding=" UTF-8 " standalone= " yes "?>
+	<pizzes>
+		<pizza vegana="si">
+			<nom>margarita</nom>
+			<preu>6</preu>
+			<ingredients>
+				<ingredient>tomaquet</ingredient>
+				<ingredient>formatge</ingredient>
+			</ingredients>	
+		</pizza>
+		<pizza vegana="no">
+			<nom>clasica</nom>
+			<preu>6</preu>
+			<ingredients>
+				<ingredient>tomaquet</ingredient>
+				<ingredient>formatge</ingredient>
+				<ingredient>york</ingredient>			
+			</ingredients>	
+		</pizza>
+		<pizza vegana="no">
+			<nom>hawaiana</nom>
+			<preu>7</preu>
+			<ingredients>
+				<ingredient>tomaquet</ingredient>
+				<ingredient>formatge</ingredient>
+				<ingredient>pinya</ingredient>
+				<ingredient>york</ingredient>
+			</ingredients>	
+		</pizza>
+		<pizza vegana="no">
+			<nom>sala</nom>
+			<preu>8</preu>
+			<ingredients>
+				<ingredient>tomaquet</ingredient>
+				<ingredient>formatge</ingredient>
+				<ingredient>anxoves</ingredient>
+				<ingredient>olives</ingredient>
+			</ingredients>	
+		</pizza>
+		<pizza vegana="si">
+			<nom>vegetariana</nom>
+			<preu>14</preu>
+			<ingredients>
+				<ingredient>tomaquet</ingredient>
+				<ingredient>formatge</ingredient>
+				<ingredient>pastanaga</ingredient>
+				<ingredient>alberginia</ingredient>
+				<ingredient>pebrot</ingredient>
+			</ingredients>	
+		</pizza>
+		<pizza vegana="no">
+			<nom>barbacoa</nom>
+			<preu>16</preu>
+			<ingredients>
+				<ingredient>tomaquet</ingredient>
+				<ingredient>formatge</ingredient>
+				<ingredient>bacon</ingredient>
+				<ingredient>salsa barbacoa</ingredient>
+				<ingredient>frankfurts</ingredient>
+			</ingredients>	
+		</pizza>		
+	</pizzes>
+</xml>

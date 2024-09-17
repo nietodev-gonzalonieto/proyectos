@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Act3-Gonzalo Nieto</title>
+		<script type="text/javascript">
+			function MostrarOcultar() {
+					numero = this.id.charAt(this.id.length - 1);//depende del numero cojera un parrafo o otro.
+					parrafo = document.getElementById("contenidos_" + numero);
+					enlace = document.getElementById("enlace_" + numero);
+
+					switch (parrafo.style.display) {
+							case "inline":
+							case "": parrafo.style.display = "none";
+									enlace.innerHTML = "Mostrar Text";
+									break;
+							case "none": parrafo.style.display = "inline";
+									enlace.innerHTML = "Ocultar Text";
+									break;
+					}
+			}
+			window.onload = function () {
+					var seleccionar = document.getElementsByTagName("a");
+					seleccionar[0].onclick = MostrarOcultar; //primer parrafo
+					seleccionar[1].onclick = MostrarOcultar; //segundo parrafo
+					seleccionar[2].onclick = MostrarOcultar; //tercer parrafo
+			}
+		</script>
+	</head>
+	<body>
+		<p id="contenidos_1">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodonec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper,odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.</p>
+
+		<a id="enlace_1" href="#">Ocultar contenidos</a><br />
+
+		<p id="contenidos_2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodonec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper,odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.</p>
+
+		<a id="enlace_2" href="#">Ocultar contenidos</a><br />
+
+		<p id="contenidos_3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodonec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper,odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.</p>
+
+		<a id="enlace_3" href="#">Ocultar contenidos</a>
+	</body>
+</html>

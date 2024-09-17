@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Gonzalo Nieto – M6 - DAW</title>
+  </head>
+  <body>
+    <div>
+      <ul class="principal">
+       <li>Element 1</li>
+       <ul>Subllista
+         <li>Element 1.1</li>
+         <li>Element 1.2</li>
+       </ul>
+       <li>Element 2</li>
+      </ul>
+      <ul class="principal">
+        <li>Element 1</li>
+        <ul>Subllista
+          <li>Element 1.1</li>
+          <li>Element 1.2</li>
+       </ul>
+       <li>Element 3</li>
+      </ul>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function(){
+          var liTotales = 0;
+          $("ul.principal > li").each(function(index) {
+            liTotales = liTotales+1;
+          });
+
+          var ulTotales = 0;
+          $("ul.principal").each(function(index) {
+           ulTotales = ulTotales+1;
+            });
+
+          $("li").css( "font-weight","bold" );
+
+          console.log("LI totales:"+liTotales*2);
+          console.log("UL totales:"+ulTotales*2);
+        });
+    </script>
+  </body>
+</html>

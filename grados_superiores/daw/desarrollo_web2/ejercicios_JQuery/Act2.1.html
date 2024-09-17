@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Gonzalo Nieto – M6 - DAW</title>
+    <style>
+      div{
+        width:400px;
+        height: 400px;
+        background-color: red;
+      }
+      .verde{
+        width:40px;
+        height: 40px;
+        background-color: green;
+      }
+      .azul{
+        width:40px;
+        height: 40px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="cuadradoRojo">
+
+    </div><br><br>
+
+    <input type="button" value="eliminar" onclick="eliminarElementos()">
+    <input type="button" value="verde" onclick="insertarVerde()">
+    <input type="button" value="azul" onclick="fondoAzul()">
+    <input type="button" value="amarillo" onclick="anadirAmarillo()">
+    <input type="button" value="borrar ultimo" onclick="eliminarUltimo()">
+    <input type="button" value="borrar primero" onclick="eliminarPrimero()">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+      function eliminarElementos(){
+        $("#cuadradoRojo div").remove();
+      };
+      function insertarVerde(){
+        $("#cuadradoRojo").html("<div class='verde'></div>");
+      };
+      function fondoAzul(){
+        $("#cuadradoRojo").append("<div class='azul'></div>");
+      };
+      function anadirAmarillo(){
+          $('#cuadradoRojo').prepend('<div style="width: 40px; height: 50px;background-color: yellow;"></div>');
+      };
+      function eliminarUltimo(){
+        $("#cuadradoRojo").children().last().remove();
+      };
+      function eliminarPrimero(){
+        $("#cuadradoRojo").children().first().remove();
+      };
+    </script>
+  </body>
+</html>

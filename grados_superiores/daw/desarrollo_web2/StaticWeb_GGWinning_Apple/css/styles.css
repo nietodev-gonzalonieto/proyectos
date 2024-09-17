@@ -1,0 +1,610 @@
+* {
+  margin:0px;
+  padding:0px;
+font-family: sans-serif;
+}
+
+/*HEADER CSS*/
+.logo{
+    background-color: black;
+}
+.logo a{
+  text-decoration:none;
+  background-color: black;
+  color: white;
+}
+header {
+  text-align: center;
+  margin:auto;
+  width:100%;
+  font-family:Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+#menu{
+  width:100%;
+  height: 55px;
+  background-color: black;
+  position:fixed;
+}
+.categoria{
+  padding: 100px;
+
+}
+/* CSS del menu de navegacion */
+nav ul li .categoria{
+    padding: 19px 134px;
+    font-size: 14px;
+}
+/* CSS del menu d */
+nav ul li ul li a{
+  padding: 0px 300px;
+  font-size: 2em;
+
+}
+ul, ol {
+  list-style:none;
+}
+
+.nav{
+    height: 100%;
+    background-color: black;
+}
+
+.nav > li {
+  float:left;
+
+}
+
+.nav li a {
+  background-color:#000;
+  color:#fff;
+  text-decoration:none;
+  padding:18px 12px;
+  display:block;
+  font-size: 16px
+}
+
+.nav li ul {
+  display:none;
+  position:absolute;
+  width:100%;
+  left:0px;
+  background-color: black;
+  padding-bottom: 10px;
+}
+
+.nav li:hover > ul {
+  display:flex;
+}
+
+.nav li ul li {
+  position:relative;
+  flex: auto;
+}
+
+.nav li ul li ul {
+  right:140px;
+  top:0px;
+}
+/*Aqui Termina el Header */
+/* Pagina Principal CSS */
+    /*Aquí empieca el Primero articulo principal */
+    section.primerProducto{
+      background-color: #131218;
+      padding-top: 7%;
+    }
+    h2.tituloPrincipal{
+      text-align: center;
+      padding-top:8%;
+      font-size: 4em;
+      color: white;
+    }
+    h3.tituloSecundario{
+      text-align: center;
+      padding-top:0.5%;
+      font-size: 1.6em;
+      color: white;
+    }
+    div.informacion{
+      text-align: center;
+      padding-top:0.5%;
+      font-size: 1.2em;
+      color: white;
+    }
+    div.informacion a.enlace{
+      color: white;
+      text-decoration: none;
+    }
+    div.informacion a.enlace :hover{
+      text-decoration: underline;
+    }
+    img.fotoProductoPrincipal{
+
+    }
+    /*Aquí Termina el Primero articulo principal */
+    /*Aquí empieca el Segundo articulo principal */
+    section.primerProducto{
+      background-color: #131218;
+    }
+    h2.tituloPrincipal2{
+      text-align: center;
+      padding-top:8%;
+      font-size: 4em;
+      color: black;
+      font-family: sans-serif;
+    }
+    h3.tituloSecundario2{
+      text-align: center;
+      padding-top:0.5%;
+      font-size: 1.6em;
+      color: black;
+
+    }
+    div.informacion2{
+      text-align: center;
+      padding-top:0.5%;
+      font-size: 1.2em;
+      color: black;
+    }
+    div.informacion2 a.enlace2{
+      color: black;
+      text-decoration: none;
+      color: #007bff;
+    }
+    div.informacion2 a.enlace2 :hover{
+      text-decoration: underline;
+      color: #007bff;
+    }
+    img.fotoProductoPrincipal{
+      padding-left: 21em;
+    }
+    img.fotoProductoPrincipaldos{
+      padding-left: 14em;
+    }
+    /* Promocionales */
+    /* Promocional1*/
+    .promocional1 {
+      display:inline-block;
+      float: left;
+      background: #eeeeee;
+      padding: 190px 7%;
+      padding: 18px 10.87%;
+    }
+    .titulo1ProductoPromocional1{
+      text-align: center;
+      padding-top: 8%;
+      font-size: 34px;
+      color: black;
+      font-weight: bold;
+    }
+    .titulo2ProductoPromocional{
+      text-align: center;
+      padding-top: 0.5%;
+      font-size: 19px;
+      color: black;
+      font-weight: inherit;
+    }
+
+    .fotoProductoPromocional1{
+      width: 489px;
+      height: 363px;
+      padding-top: 17px;
+    }
+    /* Promocional2*/
+    .promocional2 {
+      display:inline-block;
+      float: left;
+      background: white;
+      padding: 190px 7%;
+      padding: 13px 9.7%;
+    }
+    .fotoProductoPromocional2{
+      width: 617px;
+      height: 363px;
+      padding-top: 17px;
+    }
+    /* Promocional3*/
+    .promocional3 {
+      display:inline-block;
+      float: left;
+      background: white;
+      padding: 190px 7%;
+      padding: 32px 6.7%;
+    }
+    .fotoProductoPromocionaltres{
+      padding-left: 10em;
+    }
+    /* Promocional4*/
+    .promocional4 {
+      display:inline-block;
+      float: left;
+      background: black;
+      padding: 190px 7%;
+      padding: 25px 16.9%;
+    }
+    .titulo1ProductoPromocional4{
+      text-align: center;
+      padding-top: 17%;
+      font-size: 34px;
+      color: white;
+      font-weight: bold;
+    }
+    .titulo2ProductoPromocional4{
+      text-align: center;
+      padding-top: 0.5%;
+      font-size: 19px;
+      color:white;
+      font-weight: inherit;
+    }
+    /* Final Promocionales */
+/*Final Pagina Principal CSS */
+/*Servicios CSS*/
+  #servicios{
+    background-color: gray;
+  }
+  .presentacionServicios{
+    background-color: #333333;
+    padding-top: 7%;
+    height: 55em;
+  }
+  section.presentacionServicios  h1.tituloPrincipal{
+    text-align: center;
+    font-size: 7em;
+    color: black;
+    font-family: sans-serif;
+    color: white;
+
+  }
+  img.logoGrande{
+    padding: 0px 42.7%;
+    height: 14em;
+    padding-top: 5%;
+  }
+
+  section.presentacionServicios h3.tituloSecundario {
+    padding-bottom: 3em;
+  }
+  .contenedorAplicaciones{
+    padding-left: 21em;
+    width: 100%;
+  }
+  .tituloSecundarioNegro{
+    text-align: center;
+    padding-top:0.5%;
+    font-size: 1.6em;
+    color: black;
+  }
+  div.aplicacionesContenedor{
+    width: 64%;
+    padding-left: 20%;
+  }
+  .aplicaciones{
+    text-align: center;
+    padding: 9px 22px;
+    width: 13%;
+    height: 225px;
+    float: left;
+    background-color: white;
+    border-radius: 11px;
+    margin-right: 20px;
+  }
+  .imagenApp{
+    padding-top: 16px;
+  }
+  .enlaceAzul{
+    color: blue;
+    text-decoration: none;
+  }
+  div.aplicaciones div.informacion {
+    font-size: 1em;
+    padding: 13px;
+  }
+  .contenedorAplicacion2{
+    height: 320px;
+    border-radius: 15px;
+    background-color: white;
+    margin: 20px;
+  }
+  .aplicacionesContenedorGrande{
+    height: 314px;
+  }
+  table{
+    width:100%;
+  }
+  .aplicaciones2{
+    width: 34%;
+    height: 296px;
+    float: left;
+  }
+  .tituloSecundarioNegro3{
+    padding-bottom: 1%;
+    padding-top: 7.5%;
+    font-size: 1.8em;
+    color: black;
+
+  }
+  .descripcionAplicacion{
+    width: 66%;
+    height: 296px;
+    float: left;
+  }
+  .celdaAplicaciones2{
+    padding-left: 10%!important;
+  }
+  .celdaAplicaciones2{
+    padding-left: 5%;
+    padding-right: 6%;
+  }
+  .imagenApp2{
+    padding-top: 15%;
+  padding-left: 47%;
+  }
+
+  .tituloSecundarioNegro2{
+    text-align: center;
+    padding-top: 1.5%;
+    font-size: 1.8em;
+    color: black;
+    padding-left: 10%;
+  }
+
+/*Final Servicios CSS*/
+/*PROCESADORES CSS */
+    #procesadoresBody{
+      background-color: gray;
+    }
+    .tituloSecundarioProcesador2{
+      text-align: center;
+      font-size: 2.6em;
+      color: white;
+    }
+    .presentacionProcesadores{
+      background-color: #333333;
+      padding-top: 7%;
+      height: 42em;
+    }
+    section.presentacionProcesadores  h1.tituloPrincipal{
+      text-align: center;
+      font-size: 7em;
+      color: black;
+      font-family: sans-serif;
+      color: white;
+      padding-left: 2%;
+    }
+    img.logoGrande{
+      padding: 0px 42.7%;
+      height: 14em;
+      padding-top: 5%;
+    }
+
+    section.presentacionProcesadores h3.tituloSecundario {
+      padding-bottom: 3em;
+    }
+
+    .contenedorProcesadores{
+      height: 320px;
+      border-radius: 15px;
+      background-color: black;
+      margin: 20px;
+    }
+    .procesadores2{
+      width: 34%;
+      height: 296px;
+      float: left;
+    }
+    .tituloSecundario{
+      padding-bottom: 1%;
+      padding-top: 7.5%;
+      font-size: 1.8em;
+      color: black;
+
+    }
+    .tituloSecundarioProcesador{
+      text-align: left;
+      padding-top: 3.5%;
+      font-size: 2.6em;
+      color: white;
+    }
+    .imagenProcesadores{
+      padding-left: 29%;
+      height: 315px;
+    }
+    p.letraBlanco{
+      color: white;
+      line-height: 30px;
+    }
+    p.precio{
+      text-align: right;
+      font-size: 2.6em;
+      color: white;
+      padding-right: 4em;
+    }
+/*Final Procesadores CSS */
+/* Producto Individual CSS */
+    .containerProd{
+      text-align: center;
+      margin: auto;
+      width: 100%;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: black;
+      height: 95px;
+    }
+    .contenedorProducto{
+      height: 570px;
+      border-radius: 15px;
+      background-color: white;
+      margin: 20px;
+    }
+    .imagenProducto{
+      width: 34%;
+      height: 296px;
+      float: left;
+    }
+    .imagenProducto1{
+      padding-left: 36%;
+      height: 345px;
+      padding-top: 16%;
+    }
+    .tituloPrincipalProducto{
+      padding-top: 0.5%;
+      font-size: 2.6em;
+      color: black;
+      padding-bottom: 15px;
+    }
+    .descripcionProducto{
+      padding-left: 49%;
+      padding-top: 5%;
+    }
+    section.contenidoCaja{
+      background-color: white;
+    }
+    h1.tituloPrincipal2{
+      text-align: center;
+      padding-top:8%;
+      font-size: 4em;
+      color: black;
+      font-family: sans-serif;
+    }
+    h3.tituloSecundario2{
+      text-align: center;
+      padding-top:0.5%;
+      font-size: 1.6em;
+      color: black;
+    }
+    p.letraDescripcionProductos{
+      color: black;
+      line-height: 30px;
+    }
+    h2.tituloPrincipalProducto{
+      text-align: center;
+      font-size: 4em;
+      color: white;
+    }
+    h2.tituloPrincipalProductoCaja{
+      text-align: center;
+      font-size: 2.7em;
+      color: black;
+      padding-top: 5%;
+    }
+    .fotoProductoCaja{
+      padding-left: 30em;
+    }
+    .fijo{
+      position:fixed;
+      position: fixed;
+      height: 190px;
+      background-color: gray;
+      width: 100%;
+      opacity: 0.9;
+    }
+    .fijo p{
+      text-align: right;
+      padding: 9px;
+      font-size: 5em;
+      margin-right: 182px;
+      padding-top: 16px;
+
+    }
+    .fijo button{
+      text-align: center;
+      padding: 8px;
+      font-size: 1.5em;
+      margin-left: 65em;
+    }
+    p.letraDescripcionProductosExplicit{
+      color: black;
+      line-height: 30px;
+      text-align: center;
+    }
+
+/* Final Producto Individual CSS */
+/*Articulo CSS*/
+    article.articulo{
+      padding: 50px;
+      background-color: white
+
+    }
+    article.articulo h2{
+      text-decoration:none;
+      color: black
+    }
+    article.articulo p{
+      line-height: 35px;
+      margin-top: 10px;
+    }
+    h1.tituloPrincipalBlog{
+      text-align: center;
+      padding-top:8%;
+      font-size: 4em;
+      color: black;
+      font-family: sans-serif;
+      padding-bottom: 20px;
+      background-color: #F9F6EF;
+    }
+    p.articulo{
+      font-size: 16px;
+      line-height: 30px;
+      text-align: center;
+    }
+    .fotoArticulo{
+      padding: 0px 40.7%;
+      height: 15em;
+      padding-top: 25px;
+    }
+/*Final Articulo CSS*/
+/*Contacto*/
+  form{
+    text-align: center;
+    padding-top: 80px;
+    font-size: 22px;
+  }
+  #enviar{
+    text-align: center;
+    padding: 8px;
+    font-size: 1.5em;
+    margin-left: 48%;
+  }
+  .introducir{
+    font-size: 18px;
+    padding: 10px;
+  }
+  #mensajePrivacidad{
+    color:#c4c4c4 !important;
+    text-align: center;
+    padding-top: 100px;
+  }
+/*Fin del Contacto*/
+/* Footer */
+footer{
+  padding-top: 1px;
+}
+ #procesadoresFooter{
+   background-color: white;
+ }
+.columnas{
+    padding: 0em 26%;
+  display:inline-block;
+  padding-left: 39em;
+
+}
+.footerLinks{
+  padding: 10px 0%;
+  float: left;
+  text-align: center;
+  font-size: 11px;
+  font-weight: inherit;
+  line-height: 2;
+  padding-top: 45px;
+  margin: 3em;
+  padding-top: 9em;
+  }
+footer a{
+  text-decoration:none;
+}
+footer p {
+  padding-top: 2em;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+}

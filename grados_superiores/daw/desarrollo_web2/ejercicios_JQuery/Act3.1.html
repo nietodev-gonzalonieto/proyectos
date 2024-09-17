@@ -1,0 +1,24 @@
+<!-- Con on() podemos asignar eventos a los elementos del DOM.
+Con off() eliminanos las asignaciones de eventos realizados previamente los elementos del DOM con la función on().
+Este ejemplo me he basado en el ejemplo de https://www.w3schools.com/jquery/event_off.asp para entender el
+funcionamiento de estos métodos-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("p").on("click", function(){
+          $(this).css("background-color", "green");
+        });
+        $("button").click(function(){
+          $("p").off("click");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <p>Clica para cambiar el color.</p>
+    <button>Elimina el evento de cambio de color.</button>
+  </body>
+</html>

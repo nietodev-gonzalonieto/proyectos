@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8" />
+      <title>Ejercicio de selectores</title>
+        <style type="text/css">
+
+            a {
+                color: red;
+                text-decoration: none;
+              }
+
+          /*Muestra con color blanco sobre un fondo rojo CUANDO TE SITUAS ENCIMA DE EL CON EL CURSOR*/
+              a:hover{
+                        color: white;
+                        background-color: red;
+                        text-decoration: underline;
+                      }
+
+          /*Cuando un enlace tiene el foco del teclado, se muestra de color azul y se muestra el subrayado*/
+             a:focus {
+                      color: blue;
+                      text-decoration: underline;
+                     }
+
+          /*Cuando un enlace ha sido visitado, se muestra de color verde oscuro y sin subrayado.*/
+             a:visited {
+                        color: green;
+                       }
+          /*Cuando un enlace está activo, se muestra de color naranja y sin subrayado.*/
+             a:active {
+                       color: orange;
+                       background-color: white;
+                       text-decoration: none;
+                      }
+        </style>
+    </head>
+    <body>
+
+        <h1>Universidad de Alicante</h1>
+
+        <ul>
+          <li><a href="presentacion.html">Presentación</a></li>
+          <li><a href="estudios.html">Estudios</a></li>
+          <li><a href="alumnos.html">Alumnos</a></li>
+          <li><a href="deportes.html">Deportes</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+        </ul>
+
+      </body>
+</html>

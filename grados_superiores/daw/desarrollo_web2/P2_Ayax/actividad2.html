@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>calculadora Gonzalo Nieto Act2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body style="text-align:center;">
+    <form>
+        <input type="text" value="  " id="numero1">
+        <select id="opciones">
+            <option id="mas" value="+">+</option>
+            <option id="menos" value="-">-</option>
+            <option id="multi" value="*">*</option>
+            <option id="divi" value="/">/</option>
+        </select>
+        <input type="text" value="  " id="numero2">
+        =
+        <input type="text" value="" id="resultado" disabled>
+    </form><br>
+    <input type="button" id="boton" value="Calcular Resultado"/>
+    <script>
+        $.getScript("scriptAct2.js");
+    </script>
+  </body>
+</html>

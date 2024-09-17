@@ -1,0 +1,249 @@
+<!--M4_UF1_NF1_act2_EJERCICIO 1-->
+<?xml version=" 1.0 " encoding=" UTF-8 " standalone= " yes "?>
+	<pelis>
+	<!--Aqui comença la peli 1 -->			
+		<peli genero="terror">
+			<titol>monstruo</titol>
+			<directors>
+				<director>
+					<nom_director_principal>Mauri</nom_director_principal>
+					<cognom1_director_principal>Gomez</cognom1_director_principal>
+					<cognom2_director_principal>Del Valle</cognom2_director_principal>
+				</director>
+				<director_efectes>
+					<nom_director_efectes>Ermini</nom_director_efectes>
+					<cognom1_director_efectes>Fernandez</cognom1_director_efectes>
+					<cognom2_director_efectes>Rodriguez</cognom2_director_efectes>
+				</director_efectes>
+				<director_musica>
+					<nom_director_musica>Willy</nom_director_musica>
+					<cognom1_director_musica>Rex</cognom1_director_musica>
+					<cognom2_director_musica>Wonka</cognom2_director_musica>
+				</director_musica>
+			</directors>	
+			<actors>
+				<actor_principal>
+					<nom>Huge</nom>
+					<cognom1>Jackson</cognom1>
+					<cognom2>Stanman</cognom2>
+					<personatge>Arturo el valiente</personatge>	
+				</actor_principal>		
+				<actor_secundari>
+					<nom>Gisela</nom>
+					<cognom1>Gimenez</cognom1>
+					<cognom2>Madona</cognom2>
+					<personatge>Aurora Rodriguez</personatge>
+				</actor_secundari>
+				<antagonista>
+					<nom>Mike</nom>
+					<cognom1>Rick</cognom1>
+					<cognom2>Manchamp</cognom2>
+					<personatge>Monstruo</personatge>
+				</antagonista>
+			</actors>
+		</peli>
+	<!--Aqui comença la peli 2 -->
+		<peli genero="comedia">
+			<titol>la clase</titol>
+			<directors>
+				<director>
+					<nom_director_principal>Adrian</nom_director_principal>
+					<cognom1_director_principal>Martinez</cognom1_director_principal>
+					<cognom2_director_principal>Gimeno</cognom2_director_principal>
+				</director>
+				<director_efectes>
+					<nom_director_efectes>Marta</nom_director_efectes>
+					<cognom1_director_efectes>Rosalia</cognom1_director_efectes>
+					<cognom2_director_efectes>Palmares</cognom2_director_efectes>
+				</director_efectes>
+				<director_musica>
+					<nom_director_musica>David</nom_director_musica>
+					<cognom1_director_musica>Santo</cognom1_director_musica>
+					<cognom2_director_musica>Rodriguez</cognom2_director_musica>
+				</director_musica>
+			</directors>	
+			<actors>
+				<actor_principal>
+					<nom>Jason</nom>
+					<cognom1>Rodri</cognom1>
+					<cognom2>Martinex</cognom2>
+					<personatge>el Bromista</personatge>	
+				</actor_principal>		
+				<actor_secundari>
+					<nom></nom>
+					<cognom1>Marta</cognom1>
+					<cognom2></cognom2>
+					<personatge>La Jajas</personatge>
+				</actor_secundari>
+				<antagonista>
+					<nom>Roberto</nom>
+					<cognom1>Marianela</cognom1>
+					<cognom2>Mustafar</cognom2>
+					<personatge>El Profe</personatge>
+				</antagonista>
+			</actors>
+		</peli>
+	<!--Aqui comença la peli 3 -->
+		<peli genero="aventura">
+			<titol>Indiana Jona</titol>
+			<directors>
+				<director>
+					<nom_director_principal>Diego</nom_director_principal>
+					<cognom1_director_principal>De la Vega</cognom1_director_principal>
+					<cognom2_director_principal>MArtinez</cognom2_director_principal>
+				</director>
+				<director_efectes>
+					<nom_director_efectes>Jorge</nom_director_efectes>
+					<cognom1_director_efectes>Javier</cognom1_director_efectes>
+					<cognom2_director_efectes>Paz</cognom2_director_efectes>
+				</director_efectes>
+				<director_musica>
+					<nom_director_musica>Sergio</nom_director_musica>
+					<cognom1_director_musica>Manuel</cognom1_director_musica>
+					<cognom2_director_musica>Monkey</cognom2_director_musica>
+				</director_musica>
+			</directors>	
+			<actors>
+				<actor_principal>
+					<nom>Victor</nom>
+					<cognom1>Manuel</cognom1>
+					<cognom2>Casas</cognom2>
+					<personatge>Jona Jones</personatge>	
+				</actor_principal>		
+				<actor_secundari>
+					<nom>Roberta</nom>
+					<cognom1>Dianda</cognom1>
+					<cognom2>Jimenez</cognom2>
+					<personatge>Diana</personatge>
+				</actor_secundari>
+				<antagonista>
+					<nom>Lucas</nom>
+					<cognom1>Hernandez</cognom1>
+					<cognom2>Rivagorsa</cognom2>
+					<personatge>EL Coleccionista</personatge>
+				</antagonista>
+			</actors>
+		</peli>
+	<!--Aqui comença la peli 4 -->	
+		<peli genero="super_heroes">
+			<titol>El Nieto</titol>
+			<director>
+				<nom_director_principal>Beni</nom_director_principal>
+				<cognom1_director_principal>Fundez</cognom1_director_principal>
+				<cognom2_director_principal>Aravena</cognom2_director_principal>
+			</director>
+			<director_efectes>
+				<nom_director_efectes>Guillermo</nom_director_efectes>
+				<cognom1_director_efectes>Manuel</cognom1_director_efectes>
+				<cognom2_director_efectes>Rodriguez</cognom2_director_efectes>
+			</director_efectes>
+			<director_musica>
+				<nom_director_musica>Alba</nom_director_musica>
+				<cognom1_director_musica>Rio</cognom1_director_musica>
+				<cognom2_director_musica>Norte</cognom2_director_musica>
+			</director_musica>	
+			<actors>
+				<actor_principal>
+					<nom>Gonsal</nom>
+					<cognom1>Net</cognom1>
+					<cognom2>Manue</cognom2>
+					<personatge>El Nieto</personatge>	
+				</actor_principal>		
+				<actor_secundari>
+					<nom>Marie</nom>
+					<cognom1>Solete</cognom1>
+					<cognom2>Temanda</cognom2>
+					<personatge>Maria</personatge>
+				</actor_secundari>
+				<antagonista>
+					<nom>Paula</nom>
+					<cognom1>Jimenez</cognom1>
+					<cognom2>Pesadilla</cognom2>
+					<personatge>La lio</personatge>
+				</antagonista>
+			</actors>
+		</peli>
+	<!--Aqui comença la peli 5 -->
+		<peli genero="romance">
+			<titol>Diario</titol>
+			<directors>
+				<director>
+					<nom_director_principal>Miguel</nom_director_principal>
+					<cognom1_director_principal>Bar</cognom1_director_principal>
+					<cognom2_director_principal>Doro</cognom2_director_principal>
+				</director>
+				<director_efectes>
+					<nom_director_efectes>Ivan</nom_director_efectes>
+					<cognom1_director_efectes>Martinez</cognom1_director_efectes>
+					<cognom2_director_efectes>Porto</cognom2_director_efectes>
+				</director_efectes>
+				<director_musica>
+					<nom_director_musica>Lorena</nom_director_musica>
+					<cognom1_director_musica>Diaz</cognom1_director_musica>
+					<cognom2_director_musica>Serrano</cognom2_director_musica>
+				</director_musica>
+			</directors>	
+			<actors>
+				<actor_principal>
+					<nom>Luis</nom>
+					<cognom1>Houses</cognom1>
+					<cognom2>Perez</cognom2>
+					<personatge>Manu</personatge>	
+				</actor_principal>		
+				<actor_secundari>
+					<nom>Saray</nom>
+					<cognom1>Barajas</cognom1>
+					<cognom2>Carmena</cognom2>
+					<personatge>Sara</personatge>
+				</actor_secundari>
+				<antagonista>
+					<nom>William</nom>
+					<cognom1>Dey</cognom1>
+					<cognom2>Bean</cognom2>
+					<personatge>Javier</personatge>
+				</antagonista>
+			</actors>
+		</peli>
+	<!--Aqui comença la peli 6 -->	
+		<peli genero="musical">
+			<titol>Las notas</titol>
+			<directors>
+				<director>
+					<nom_director_principal>Maurizio</nom_director_principal>
+					<cognom1_director_principal>Ponce</cognom1_director_principal>
+					<cognom2_director_principal>Bronca</cognom2_director_principal>
+				</director>
+				<director_efectes>
+					<nom_director_efectes>Pablo</nom_director_efectes>
+					<cognom1_director_efectes>Molina</cognom1_director_efectes>
+					<cognom2_director_efectes>Diaz</cognom2_director_efectes>
+				</director_efectes>
+				<director_musica>
+					<nom_director_musica>Carol</nom_director_musica>
+					<cognom1_director_musica>Becky</cognom1_director_musica>
+					<cognom2_director_musica>Gil</cognom2_director_musica>
+				</director_musica>
+			</directors>	
+			<actors>
+				<actor_principal>
+					<nom>Marco</nom>
+					<cognom1>Silas</cognom1>
+					<cognom2>Atril</cognom2>
+					<personatge>Martín</personatge>	
+				</actor_principal>		
+				<actor_secundari>
+					<nom>Andrea</nom>
+					<cognom1>Santino</cognom1>
+					<cognom2>Mil</cognom2>
+					<personatge>Sandra</personatge>
+				</actor_secundari>
+				<antagonista>
+					<nom>Ana</nom>
+					<cognom1>Mechan</cognom1>
+					<cognom2>Fernandez</cognom2>
+					<personatge>Marisa</personatge>
+				</antagonista>
+			</actors>
+		</peli>
+	</pelis>
+</xml>

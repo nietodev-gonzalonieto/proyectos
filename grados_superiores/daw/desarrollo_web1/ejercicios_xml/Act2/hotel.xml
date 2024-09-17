@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hotels>
+<!-- Primer Registro -->
+	<hotel bufet_esmorzar="si">
+		<nom>Las Vegas</nom>
+		<telefon>6249420132</telefon>
+		<ubicacio>
+			<ciutat>Madrid</ciutat>
+			<pais>Espanya</pais>
+			<codip>32940</codip>
+		</ubicacio>
+		<estrelles>2</estrelles>
+		<descripcio>Las vegas de Espanya</descripcio>
+		<habitacions>
+			<individual>
+				<preu>30</preu>
+				<numhabit>10</numhabit>
+			</individual>
+			<doble>
+				<preu>50</preu>
+				<numhabit>15</numhabit>
+			</doble>
+			<triple>
+				<preu>100</preu>
+				<numhabit>10</numhabit>
+			</triple>
+			<suites>
+				<preu>200</preu>
+				<numhabit>2</numhabit>
+			</suites>
+			<totalhabit>37</totalhabit>
+		</habitacions>
+	</hotel>
+<!-- Segundo Registro -->
+	<hotel bufet_esmorzar="no">
+		<nom>Casa Ana</nom>
+		<telefon>432547690</telefon>
+		<ubicacio>
+			<ciutat>Valencia</ciutat>
+			<pais>España</pais>
+			<codip>21355L</codip>
+		</ubicacio>
+		<estrelles>3</estrelles>
+		<descripcio>Casa rural</descripcio>
+		<habitacions>
+			<individual>
+				<preu>40</preu>
+				<numhabit>5</numhabit>
+			</individual>
+			<doble>
+				<preu>60</preu>
+				<numhabit>10</numhabit>
+			</doble>
+			<triples>
+				<preu>-</preu>
+				<numhabit>0</numhabit>
+			</triples>
+			<suites>
+				<preu>-</preu>
+				<numhabit>0</numhabit>
+			</suites>
+			<totalhabit>15</totalhabit>
+		</habitacions>
+	</hotel>
+<!-- Tercer Registro -->
+	<hotel bufet_esmorzar="si">
+		<nom>Hotel Barcelona</nom>
+		<telefon>213820223</telefon>
+		<ubicacio>
+			<ciutat>Barcelona</ciutat>
+			<pais>España</pais>
+			<codip>23546B</codip>
+		</ubicacio>
+		<estrelles>5</estrelles>
+		<descripcio>El millor hotel de Barcelona</descripcio>
+		<habitacions>
+			<individual>
+				<preu>100</preu>
+				<numhabit>20</numhabit>
+			</individual>
+			<doble>
+				<preu>200</preu>
+				<numhabit>20</numhabit>
+			</doble>
+			<triples>
+				<preu>300</preu>
+				<numhabit>10</numhabit>
+			</triples>
+			<suites>
+				<preu>500</preu>
+				<numhabit>5</numhabit>
+			</suites>
+			<totalhabit>55</totalhabit>
+		</habitacions>
+	</hotel>
+<!-- Cuarto Registro -->
+	<hotel bufet_esmorzar="no">
+		<nom>hotel brossa</nom>
+		<telefon>23424234</telefon>
+		<ubicacio>
+			<ciutat>Tarragona</ciutat>
+			<pais>España</pais>
+			<codip>123414T</codip>
+		</ubicacio>
+		<estrelles>0</estrelles>
+		<descripcio>El pitjor hotel del món</descripcio>
+		<habitacions>
+			<individual>
+				<preu>10</preu>
+				<numhabit>4</numhabit>
+			</individual>
+			<doble>
+				<preu>15</preu>
+				<numhabit>2</numhabit>
+			</doble>
+			<triples>
+				<preu>-</preu>
+				<numhabit>0</numhabit>
+			</triples>
+			<suites>
+				<preu>-</preu>
+				<numhabit>0</numhabit>
+			</suites>
+			<totalhabit>6</totalhabit>
+		</habitacions>
+	</hotel>
+<!-- Quinto Registro -->
+	<hotel bufet_esmorzar="si">
+		<nom>Casa Lucio</nom>
+		<telefon>12315136</telefon>
+		<ubicacio>
+			<ciutat>Madrid</ciutat>
+			<pais>España</pais>
+			<codip>21341M</codip>
+		</ubicacio>
+		<estrelles>4</estrelles>
+		<descripcio>Un bon restaurant i Hotel en Madrid</descripcio>
+		<habitacions>
+			<individual>
+				<preu>50</preu>
+				<numhabit>10</numhabit>
+			</individual>
+			<doble>
+				<preu>100</preu>
+				<numhabit>20</numhabit>
+			</doble>
+			<triples>
+				<preu>150</preu>
+				<numhabit>5</numhabit>
+			</triples>
+			<suites>
+				<preu>250</preu>
+				<numhabit>2</numhabit>
+			</suites>
+			<totalhabit>37</totalhabit>
+		</habitacions>
+	</hotel>
+
+</hotels>

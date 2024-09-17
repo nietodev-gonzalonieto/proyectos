@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Gonzalo Nieto – M6 - DAW</title>
+  </head>
+  <body>
+    <form style="display:none">
+      <label for="usuario">Usuario:</label><br>
+      <input type="text" id="usuario"><br>
+      <label for="lname">Contraseña</label><br>
+      <input type="password" id="contrasena"><br><br>
+    </form>
+    <input type="submit" value="Mostrar Form" onclick="mostrar();">
+    <input type="submit" id="botonInfo" value="Mostrar Info"  onclick="mostrarInfo();">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+      function mostrar(){
+        $('form').show();
+      };
+      function mostrarInfo(){
+        alert("En usuario has introducido: "+$('#usuario').val());
+        alert("En contraseña has introducido: "+$('#contrasena').val());
+      };
+    </script>
+  </body>
+</html>

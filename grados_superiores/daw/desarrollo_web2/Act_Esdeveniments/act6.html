@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Act 6-Gonzalo Nieto</title>
+  </head>
+  <body id="cos">
+     <script type="text/javascript">
+       var element1 = document.getElementById('cos');//recull el id del body
+
+      //element1 correspon al body
+       element1.addEventListener('keypress', notificaObservador1);//t'ho mostra quan s'esta prement la tecla
+       element1.addEventListener('keydown', notificaObservador1);//t'ho mostra quan es prem la tecla
+       element1.addEventListener('keyup', notificaObservador1);//t'ho mostra quan es deixa de premer la tecla
+
+       //aquesta funció passa quan en el body (fora del text area) prems una tecla però també pasa quan ho fas en el text area
+       function notificaObservador1(e) {
+       console.log("Desde el <body> s'ha disparat un event de tipus: ", e.type); //Et mostra per consola el tipus del esdeveniment per teclat
+       }
+       function onKeyDownHandler(event) {
+        var codigo = event.which || event.keyCode;//obtienes el valor unicode de la tecla que presionas
+        console.log("Presionada: " + codigo);
+        if(codigo === 13){//el enter tiene el valor 13 si lo presionas entra en este if
+          console.log("Tecla ENTER");
+        }
+        if(codigo >= 65 && codigo <= 90){
+          console.log(String.fromCharCode(codigo));
+        }
+       }
+     </script>
+     <input onkeydown="onKeyDownHandler(event);"/>
+  </body>
+</html>

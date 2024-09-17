@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Gonzalo Nieto – M6 - DAW</title>
+  </head>
+  <body>
+    <p>
+      D'or ab les armes sues e de la Comtessa.
+    </p>
+    <p>
+      Experiència mostra la debilitat de la nostra memòria sotsmetent fàcilment.
+    </p>
+    <input type="text" id="texto" value="hola"><br><br>
+
+    <input type="button" value="boton1" onclick="cambiarTexto()">
+    <input type="button" value="boton2" onclick="cambiarHtml()">
+    <input type="button" value="boton3" onclick="cambiarInput()">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+      function cambiarTexto(){
+        $('p').text('cambio de valor');
+      };
+      function cambiarHtml(){
+         $("html").css( "color","green" );
+      };
+      function cambiarInput(){
+         $("#texto").val("0");
+      };
+    </script>
+  </body>
+</html>

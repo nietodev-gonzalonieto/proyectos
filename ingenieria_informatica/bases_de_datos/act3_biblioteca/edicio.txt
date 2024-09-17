@@ -1,0 +1,8 @@
+1	1	4	MySQL	Addison-Wesley	2008	1200	0-672-32938-7
+1	1	3	MySQL the definitive guide to using, programming, and administering MySQL 4.1 and 5.0	Sams Developer's Library	2005	1320	0-672-32673-6
+1	1	1	MySQL	New Riders	1999	756	0-7357-0921-1
+2	1	2	MySQL Cookbook	O'Reilly	2006	948	059652708X
+3	1	5	Computer science : an overview	Addison-Wesley	1997	483	0805346325
+4	1	1	Metodologia, estructura de datos y objetos	McGraw_hill	2001	735	84-481-3013-8
+4	2	1	Problemas de programacion	Mc Graw Hill	2001	324	8448107004
+4	2	2	Ejercicios de programacion, un enfoque actualizado	Mc Graw Hill	2004	375	8448107184

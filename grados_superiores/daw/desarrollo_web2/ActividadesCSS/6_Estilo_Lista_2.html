@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Estilo Lista 2</title>
+        <style>
+              ul {
+                    list-style-type: none;
+                    text-align: center;
+                    width: 150px;
+                    padding: 0;
+                  }
+
+              li {
+                  background-color: blue;
+                  color: red;
+                  border: 2px solid white;/*Esto es para que parezca que estan separado los elementos
+                                            pero en verdad solo tiene el borde en blanco*/
+                }
+
+                li a {
+                      color: white ;
+                      display: block;
+                      text-decoration: none
+                      width: 100%;          /*Esto se pone para que quede el enlace todo el ancho.*/
+                    }
+
+            /*Cuando te situas encima del cursor cambia el color*/
+              li a:hover   {
+                            outline: 2px solid #F00;  /* Outline es para establecer el contorno */
+                            }
+
+            /*Cuando un enlace tiene el foco del teclado*/
+              li a:focus {
+                           outline: 2px solid #F00;
+                          }
+
+        </style>
+  </head>
+  <body>
+    <h1>Universidad de Alicante</h1>
+
+    <ul>
+        <li><a href="">Presentacion</a></li>
+        <li><a href="">Estudis</a></li>
+        <li><a href="">Alumnes</a></li>
+        <li><a href="">Deportes</a></li>
+        <li><a href="">Servicios</a></li>
+    </ul>
+  </body>
+</html>

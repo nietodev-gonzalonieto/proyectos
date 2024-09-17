@@ -1,0 +1,53 @@
+<!--Ejercicio de Formulario-->
+<!--Gonzalo Nieto Maneu-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formulario</title>
+  </head>
+  <body>
+  	<h1><b>Información sobre el producto</b></h1>
+<!--Fieldset se utilitza para hacer un una caja donde guardaremos los valores dentro de ella-->		
+  		<fieldset>
+  				<legend>Datos básicos</legend>
+  				Nombre
+  				<br>
+  				<input type="text" name="campo de texto">
+  				<br><br>
+  				Descripción
+  				<br>
+  				<textarea name="descripción" rows="5" cols="50"></textarea>
+  				<br><br><br><br>
+  				Foto <input type="foto" name="campo de foto"><button type="elegir">Elegir</button>
+  				<br><br>
+<!--Checkbox sirve para hacer un cuadrado marcable-->  				
+  				<form>				
+  				<input type="checkbox" name="transporte" value="2" checked>Añadir contador de visitas<br>
+  				</form>
+  		</fieldset>
+<!--Esto és el segundo recuadro-->		
+  		<fieldset>		
+  				<legend>Datos económicos</legend>
+  				<br>  				
+  				Precio<input type="number">€&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Impuestos <select name="lista_de_seleccion">
+  				<option value="4%">4%</option>
+  				<option value="7%">7%</option>      
+  				<option value="16%">16%</option> 
+  				<option value="25%">25%</option>
+  				</select>
+  				<br>
+  				Promoción
+  				<br>
+<!--Esto és para hacer las bolitas para marcar el valor-->  				
+  				<form>
+	  						<input type="radio" name="gender" value="male" checked> Ninguno
+	  				<br>
+	  						<input type="radio" name="gender" value="female">Transporte gratuito
+	  				<br>
+	  						<input type="radio" name="gender" value="other"> Descuento 5% <br>
+				</form>
+
+  		</fieldset>
+  	</body>
+  	</html>

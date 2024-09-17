@@ -1,0 +1,5 @@
+Informatica	Aplicacions
+Informatica	Programacio
+Informatica	Bases de dades
+Programacio	Llenguatges
+Programacio	Algorismica

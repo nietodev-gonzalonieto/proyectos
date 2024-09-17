@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	 <title>Act 3-Gonzalo Nieto</title>
+	 <meta charset="UTF-8">
+   <script type="text/javascript">
+    function canviar() {
+      var original = document.getElementById('original');
+      nou = document.getElementById('nou');
+      var text = original.innerHTML;
+      patro = /(\b[lL][o,a]\b)|(\b[lL][e,o]s\b)/ig;
+      /*
+        [lL]-> da igual si la "L" es mayuscula o minuscula
+        [o,a] -> la siguiente letra de la "L" tiene que ser "o" o "a"
+        \b \b -> empieza y acaba
+        (\b[lL][e,o]s\b)-> lo mismo pero esta vez solo coincide cuando sea "le" o "lo" acabado en "s"
+        /ig -> global y case insensitive
+      */
+      nou.innerHTML = text.replaceAll(patro, '<b>$1$2</b>');
+    }
+   </script>
+  </head>
+  <body>
+      <p id="original">»Aprés diré a la senyoria vostra les cerimònies que s’an de fer en la capella. Ara diré los cavallers qui foren elets. Primerament, lo rey elegí XXV cavallers e, ab lo rey foren XXVI. Lo rey fon lo primer qui jurà de servar totes les ordinacions en los capítols contengudes e que no fos cavaller negú qui demanàs aquest orde que·l pogués haver. Tirant fon elet lo primer de tots los altres cavallers, per ço com fon lo millor de tots los cavallers. Aprés fon elet lo príncep de Gales, lo duch de Betafort, lo duch de Lencastre, lo duch d'Atçètera, lo marquès de Sófolch, lo marqués de Sant Jordi, lo marqués de Belpuig, Johan de Varoych, gran conestable, lo comte de Nortabar, lo comte de Salasberi, lo comte d’Estafort, lo comte de Vilamur, lo comte de les Marches Negres, lo comte de la Joyosa Guarda, lo senyor d’Escala Rompuda, lo senyor de Puigvert, lo senyor de Terranova, miçer Johan Stuart, miçer Albert de Riuçech. Aquests foren del regne. Los strangers foren: lo duch de Berrí, lo duch d’Anjou, lo comte de Flandes. Foren tots en nombre de XXVI cavallers.
+      </p>
+      <button onclick="canviar()">Canviar</button>
+      <p id="nou"></p>
+
+  </body>
+</html>

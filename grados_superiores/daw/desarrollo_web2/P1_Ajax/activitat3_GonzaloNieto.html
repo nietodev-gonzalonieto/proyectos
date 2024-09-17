@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Act3-GonzaloNieto</title>
+</head>
+<body>
+  <h2>Mail</h2>
+  <p>Inserta correo:</p>
+    <form autocompleta="off" action="/action_page.php">
+      <div class="autocompleta" style="width:300px;">
+        <input id="myInput" type="text" name="myCountry" placeholder="CorreoElectronico">
+      </div>
+      <input type="submit">
+    </form>
+    <script>
+      function autocompleta(inp, arr) {
+        var focus;
+        inp.addEventListener("input", function(e) {
+            var a, b, i, val = this.value;
+            veureCorreu();
+            if (!val) { return false;}
+            focus = -1;
+            a = document.createElement("DIV");
+            a.setAttribute("id", this.id + "autocompleta-list");
+            a.setAttribute("class", "autocompleta-items");
+            this.parentNode.appendChild(a);
+            for (i = 0; i < arr.length; i++) {
+              if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+                b = document.createElement("DIV");
+                b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+                b.innerHTML += arr[i].substr(val.length);
+                b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+                b.addEventListener("click", function(e) {
+                    inp.value = this.getElementsByTagName("input")[0].value;
+                    veureCorreu();
+                });
+                a.appendChild(b);
+              }
+            }
+        });
+        function veureCorreu(elmnt) {
+
+          var x = document.getElementsByClassName("autocompleta-items");
+          for (var i = 0; i < x.length; i++) {
+            if (elmnt != x[i] && elmnt != inp) {
+              x[i].parentNode.removeChild(x[i]);
+            }
+          }
+        }
+        document.addEventListener("click", function (e) {
+            veureCorreu(e.target);
+        });
+      }
+      var correus = ['arantxa@correu.cat','ana@correu.cat','antonio@correu.cat','jordi@correu.cat'];
+      autocompleta(document.getElementById("myInput"), correus);
+    </script>
+  </body>
+</html>

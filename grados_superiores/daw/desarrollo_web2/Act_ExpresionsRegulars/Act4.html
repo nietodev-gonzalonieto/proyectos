@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	 <title>Act 4-Gonzalo Nieto</title>
+	 <meta charset="UTF-8">
+   <script type="text/javascript">
+     function validarMail(){
+       var Mail = document.getElementById("mail").value;
+       var exresionRegular =/^(.+\@.+\..+)$/;
+       /*
+       Comienza (^) por caracteres que no sean salto de línea (.) de los que habrá al menos una ocurrencia
+       (+), después el carácter arroba (\@), seguido de un carácter que no podrá ser el salto de línea (.+),
+       después viene el carácter punto (\.), seguido de un carácter que no podrá ser el salto de línea
+       (.+).
+       */
+       if (exresionRegular.test(Mail)==true) {
+         alert("Correcte");
+       }else {
+         alert("Incorrecte");
+       }
+     }
+   </script>
+  </head>
+  <body>
+      Mail: <input type="text" id="mail "><br>
+      <input type="button" value="Enviar" onclick="validarMail()">
+    </form>
+  </body>
+</html>

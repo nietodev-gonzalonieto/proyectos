@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Primer Registro -->
+<libros>
+	<libro>
+		<autor>Elizabeth Castro</autor>
+		<titulo>XML Guía de Aprendizaje</titulo>
+		<precio moneda="euros">30</precio>
+	</libro>
+<!-- Segundo Registro -->
+	<libro>
+		<autor>Willy Wonka</autor>
+		<titulo>Minecraft World</titulo>
+		<precio moneda="dolares">20</precio>
+	</libro>
+<!-- Tercer Registro -->
+	<libro>
+		<autor>Roxana Manuela</autor>
+		<titulo>Como ser maja</titulo>
+		<precio moneda="euros">25</precio>
+	</libro>
+<!-- Cuarto Registro -->
+	<libro>
+		<autor>Chema Alonso</autor>
+		<titulo>Penteresting con Foca</titulo>
+		<precio moneda="euros">20</precio>
+	</libro>
+<!-- Quinto Registro -->
+	<libro>
+		<autor>Minchi Fuo</autor>
+		<titulo>Apple Inovation</titulo>
+		<precio moneda="yenes">400</precio>
+	</libro>
+<!-- Sexto Registre -->
+	<libro>
+		<autor>Elizabeth Castro</autor>
+		<titulo>XML Guía de Aprendizaje</titulo>
+		<precio moneda="euros">30</precio>
+	</libro>
+</libros>

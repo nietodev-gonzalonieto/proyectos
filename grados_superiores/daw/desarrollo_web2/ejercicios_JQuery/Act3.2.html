@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Gonzalo Nieto – M6 - DAW</title>
+  </head>
+  <body>
+      <div id="coordenadas"></div>
+      <input onkeydown="pulsaciones(event);"/><br>
+      <p>Puedes ver el número de la tecla desde consola.</p>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(document).mousemove(function(g){
+          $('#coordenadas').html('Coordenada: X = ' + g.pageX + ' / Coordenada Y = ' + g.pageY);
+        });
+      });
+      function pulsaciones(event) {
+          var codigo = event.which || event.keyCode;
+
+          console.log("Has presionado la tecla con el número: " + codigo);
+          if(codigo === 13){
+            console.log("Tecla ENTER");
+          }
+      }
+    </script>
+  </body>
+</html>

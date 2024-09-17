@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Actividad1-GonzaloNieto</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+      $( document ).ready(function() {
+        $.ajax({
+          url: 'holamundo.txt',
+          success: metodoGet,
+          error: nowork
+        });
+
+        function metodoGet()   {
+        function objetoAjax()   {
+          if (window.XMLHttpRequest)
+          _ajax = new XMLHttpRequest();
+          else
+          if (window.ActiveXObject)
+          _ajax = new ActiveXObject("Microsoft.XMLHTTP");
+          else
+          _ajax = false;
+          return _ajax;
+          }
+          ajax = objetoAjax();
+          ajax.open("get", "holamundo.txt", true);
+          ajax.onreadystatechange = function() {
+            if (ajax.readyState == 4){
+              document.getElementById("mostrar").innerHTML=ajax.responseText;
+            }
+          }
+          ajax.send(null)
+        };
+
+        function nowork(){
+          alert("No funciona");
+        }
+        $.getScript("scriptAct1.js");
+      });
+    </script>
+  </head>
+  <body>
+    <p id="mostrar"></p>
+  </body>
+</html>

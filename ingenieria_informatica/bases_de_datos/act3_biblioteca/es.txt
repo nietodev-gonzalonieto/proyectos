@@ -1,0 +1,6 @@
+1	Llenguatges
+1	Bases de dades
+2	Llenguatges
+2	Bases de dades
+3	Informatica
+4	Programacio

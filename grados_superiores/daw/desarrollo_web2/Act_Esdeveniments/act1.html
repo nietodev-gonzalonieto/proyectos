@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Act1-GonzaloNieto</title>
+	<meta charset="utf-8">
+</head>
+<body onload="console.log('La pàgina ha carregat completament')">
+	<br><br>
+		<button onclick="console.log('Has fet click al buto');">Text per consola</button><br><br><!--Si clicas en el boton por consola te sale una alerta-->
+		<p onmouseover="this.style.color='orange'; console.log('has pasado por encima mio');">Cambio de color</p><!--Si pasa por encima del parrafo se cambia de color y te sale alerta por consola-->
+	<!--a la imagen se le añade un borde si pasas por encima de ella-->
+		<img id="imagen" src="img/feliz.png" style="height:300px;" onmouseover="this.style.border='2px solid blue';"onmouseout="this.style.border='none'; "/>
+	<br><br>
+	<a href="#" onclick="this.style.color='red'; console.log('Has clicado en el enlace');">Link</a>
+	<script>
+	 	alert($("#imagen").css("border-style"));
+	</script>
+</body>
+</html>

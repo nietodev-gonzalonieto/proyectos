@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Gonzalo Nieto – M6 - DAW</title>
+  </head>
+  <body>
+    <div>
+      <h1>Primer títol</h1>
+      <p>D'or ab les armes sues e de la Comtessa. <a href="https://ca.wikipedia.org/wiki/Tirant_lo_Blanc">Enllaç a Tirant lo Blanc</a></p>
+      <p> Romans: d'Escipió d'Anibal de Pompeu d'Octovià. Longitud de molts dies E com entre los altres insignes.</p>
+      <h1 class="central">Segon títol</h1>
+      <p class="central">Experiència mostra la debilitat de la nostra memòria sotsmetent fàcilment. <a href="https://en.wikipedia.org/wiki/Tirant_lo_Blanch">Enllaç a tirant lo blanch</a></p>
+      <p> <span>Comte</span> en edat avançada de cinquanta-cinc anys. Fama d'aquell no deu preterir per longitud de. Havia rei o fill de rei.</p>
+      <h1>Tercer títol</h1>
+      <p id="tercer">Experiència mostra la debilitat de la nostra memòria sotsmetent fàcilment.</p>
+    </div>
+    <p class="central">Cavaller pare de cavalleria lo comte Guillem. <a href="hhttps://ca.wikisource.org/wiki/Tirant_lo_Blanch_(1873-1905)/Pr%C3%B2leg">Un altre enllaç</a></p>
+    <div>
+      La Comtessa e als servidors la. Ésser atesa sens mitjà de virtuts Los cavallers.
+      <a href="https://www.inscamidemar.cat/"> Enllaç institut</a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function(){
+            $('a:first').css('background-color', 'red');
+            $( "a:contains('blanch')" ).css('background-color', 'red');
+            $( "a:contains('altre')" ).css( "font-weight","bold" );
+            $('h1').css('font-style', 'italic');
+            $( "p.central" ).css( "color","green" );
+            $( "p:first").css( "color","green" );
+            $( "div:contains('servidors ')" ).css( "color","green" );
+            $( "p:contains('Comte')" ).css( "font-weight","bold" );
+        })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<title>GonzaloNieto Act3</title>
+</head>
+<body>
+	<form>
+			<label for="nombre">Nom:</label>
+			<input type="text" name="nombre" id="nombre" pattern="^[a-zA-Z]+(\s[a-zA-Z]+)?$" placeholder="Gonzalo" autocomplete="name"  required autofocus>
+
+			<label for="apellidos">Cognom:</label>
+			<input type="text" name="apellidos" id="apellidos" pattern="^([a-zA-Z]+\s){1,2}[a-zA-Z]+$" placeholder="Nieto" autocomplete="additional-name"  required>
+
+
+			<label for="tel">Tlf</label>
+			<input type="tel" name="tel" id="tlf" pattern="^\+\d+\s\d+$" placeholder="+34 111111111"  required>
+
+
+			<label for="dni">DNI:</label>
+			<input type="text" name="dni" id="dni" pattern="^\d{8}[A-Z]$" placeholder="12345678X" required>
+
+
+			<label for="tarjeta">Horari:</label>
+			<select name="horario" id="horario">
+				<option value="mati">Mañana</option>
+				<option value="tarda">Tarde</option>
+			</select>
+
+		<button type="submit" id="enviar">Enviar</button>
+	</form>
+</body>
+<script>
+	$('#enviar').click(function(e) {
+		e.preventDefault();
+
+		var nombre = $('#nombre').val();
+		var apellidos = $('#apellidos').val();
+		var telefono = $('#tlf').val();
+		var dni = $('#dni').val();
+		var horario = $('#horario').val();
+
+		$.ajax({
+			type: 'POST',
+			url: 'actividad3.php',
+			data: data = {
+				nombre: nombre,
+				apellidos: apellidos,
+				telefono: telefono,
+				dni: dni,
+				horario: horario
+			},
+			beforeSend: function() {
+				$("body").prepend("<img id='foto' src='foto.gif'>");
+			},
+			success: function(e) {
+				$("#foto").remove();
+				console.log(JSON.parse(e));
+				alert(JSON.parse(e).message);
+			}
+		});
+	})
+</script>
+</html>

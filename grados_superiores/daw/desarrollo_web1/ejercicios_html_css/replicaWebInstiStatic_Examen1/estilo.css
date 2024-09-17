@@ -1,0 +1,385 @@
+/* MENU HORIZONTAL */
+/* MENU HORIZONTAL */
+
+html{
+	 background-color: white;
+}
+
+header {
+		border-style: solid;
+		height:100px;
+		top:10;
+		left: 20px;
+		right: 20px;
+		position:absolute; 
+		width:98%;
+		height: 15%;
+		background-color: #f5c943; 
+}
+
+#titulo {
+			border-style: solid color black;
+			height:80px;
+			top:20px;
+			left: 20px;
+			right: 20px;
+			bottom: 20px;
+			position:absolute;
+			width:65%;
+			height: 70%;
+			text-indent: 1em;
+			line-height: 50%;
+			background-color:#f19f2e;
+			color:#498f9d;
+		}
+
+#titulo h1{
+			font-size: 30px
+		    color:#498f9d;
+		}
+
+#titulo h2{
+			font-size: 15px
+			 color:#498f9d;
+		}
+
+#Logo {	
+			height:100px;
+			top:20px;
+			left: 20px;
+			right: 20px;
+			position:absolute;
+			width:95%;
+			height: 70%;
+			text-indent: 1em;
+			line-height: 50%
+		}
+
+#Logo img {
+			width:40%;
+			height: 100%; 	
+			float:;
+			position:absolute; 
+			width:30%;
+			height: 200; 
+			right: -20px;
+			top: 3px;
+			}
+
+/* MENU HORIZONTAL */
+
+#menu {	border-style: solid;
+		background-color:#f19f2e;
+		top:170px;
+		left: 20px;
+		height:6%;
+		width:98%;
+		position:absolute;
+		float: left;
+		margin: auto;
+		text-indent: 14em;
+		z-index: 100;
+		font-size: 17px  
+		background-color: #f5c943;
+		}
+
+ul, ol{
+		list-style: none;
+
+		}	
+
+.nav li a {
+			background-color:#f19f2e;
+			color: white;
+			text-decoration:none;
+			padding: 5px 10px;
+			display:block;
+}
+
+.nav li a:hover {
+			background-color:#f5c943;
+}
+
+.nav > li {
+			float:left;
+
+}
+.nav li ul {
+		display: none;
+		position: absolute;
+		min-width: 100px;
+}
+.nav li:hover > ul {
+		display: block;
+		}
+
+/* DIV CONTENIDO EMPIEZA AQUÍ  */
+#divcontenido {	
+		border-style: solid;
+		background-color:;
+		top:235px;
+		left: 20px;
+		height: 1500px;
+		width:98%;
+		position:absolute;
+		float: ;
+		margin: ;
+		text-indent: 6em;
+		background-color:#f57243;
+		}
+
+		/* DIV IZQUIERDA EMPIEZA AQUÍ */
+		#izquierda {
+				border-style: solid;
+				background-color:;
+				top:10px;
+				left: 8px;
+				height: 97%;
+				width:14%;
+				position:absolute;
+				text-indent: 4em;
+				background-color: #f5c943;	
+		}
+					/* SIDERBAR */
+					#sidebar {	
+							border-style: solid;
+							background-color:;
+							top:7px;
+							left: 5px;
+							height: 40%;
+							width:94%;
+							position:absolute;
+							float:left; ;
+							margin: ;
+							line-height: 4em;
+							background-color:#f19f2e;
+							}
+					/* INICIO DE SESION */
+					#inicisessió {
+							border-style: solid;
+							top:600px;
+							left: 5px;
+							height: 17%;
+							width:94%;
+							position:absolute;
+							float: left;
+							text-indent: 1em;
+							background-color:#f19f2e;
+						}
+
+					#inicisessió p {
+						color: white;
+					}	
+					/* IMAGEN */
+					div #imatge {
+							border-style: solid;
+							background-color:;
+							top:862px;
+							left: 5px;
+							height: 40%;
+							width:94%;
+							position:absolute;
+							background-color:#f19f2e;
+							
+							}
+
+					#imatge img{
+								 	
+								float:;
+								position:absolute; 
+								top:90px; 
+								width:350px;
+								height: 400px; 
+								left: -50px;
+
+							}		
+		/* DIV IZQUIERDA ACABA AQUÍ */
+		/* BENVINGUDA Y ARTICLES EMPIEZA AQUÍ */
+		#benvinguda {
+					border-style: solid;
+					background-color:;
+					top:10px;
+					left: 285px;
+					height: 95%;
+					width:84%;
+					position:absolute;
+					float: ;
+					margin: ;
+					text-indent: 6em;
+					background-color:#f19f2e;
+
+					}
+
+		#benvinguda h2{
+					font-size:30px;
+					left: px;
+					text-indent: 2em;
+					}
+
+		#benvinguda p{
+					font-size:18px;
+					left: 20px;
+					text-indent: 2em;
+					}
+
+		#benvinguda	article {
+					border-style: solid;
+					font-size:18px;
+					text-indent: 0.1em;
+					line-height:90%;
+					left: 30px;
+					height: 20%;
+					width:99%;
+					}
+
+		div #benvinguda article {
+
+							border-style: solid;
+							font-size:18px;
+							text-indent: 0.1em;
+							line-height:90%;
+							left: 30px;
+							height: 16%;
+							width:99%;	
+							background-color:#f5c943;
+						}
+
+		div #benvinguda article h3 {
+							text-indent: 13em;
+							
+						}				 
+		div #benvinguda article p {
+							text-indent: 15em;
+							
+						} 				
+
+		#benvinguda article #imatgeart {
+			
+							background-color:;
+							top:304px;
+							left: 250px;
+							height: 150%;
+							width:100px;
+							position:absolute;
+						}
+
+		#benvinguda article #imatgeart img {
+								 	
+							width:8%;
+							height: 180px; 	
+							width:200px;
+							float:;
+							position:absolute; 			 
+							right: 120px;
+							}		
+
+		#benvinguda article #imatgeart2 {
+			
+							background-color:;
+							top:562px;
+							left: 250px;
+							height: 150%;
+							width:100px;
+							position:absolute;
+						}
+
+		#benvinguda article #imatgeart2 img {
+								 	
+							width:8%;
+							height: 180px; 	
+							width:200px;
+							float:;
+							position:absolute; 			 
+							right: 120px;
+							}						
+		#benvinguda article #imatgeart3 {
+			
+							background-color:;
+							top:816px;
+							left: 250px;
+							height: 150%;
+							width:100px;
+							position:absolute;
+						}
+
+		#benvinguda article #imatgeart3 img {
+								 	
+							width:8%;
+							height: 180px; 	
+							width:200px;
+							float:;
+							position:absolute; 			 
+							right: 120px;
+							}	
+	/* ACABACIÓN DE ARTICULOS Y BIENVENIDA */
+													
+	/* LA TABLA HORARIA EMPIEZA AQUÍ */	
+	#horari {
+							
+							
+							top:1050px;
+							left: 300px;
+							height: 16%;
+							width:82%;
+							position:absolute;
+							float:left;
+							margin: ;
+							line-height: 2.5em;
+							text-indent: 12.3em;
+							}
+/* DIV CONTENIDO ACABA AQUÍ  */
+
+/* PIE DE PAGINA */		
+footer  {
+					border-style: solid;
+					background-color:;
+					top:1750px;
+					left: 20px;
+					height: 10%;
+					width:98%;
+					position:absolute;
+					background-color:#f19f2e;
+					
+
+			}
+
+footer  #dreta {
+					border-style: solid;
+					top: 4px;
+					left: 1236px;
+					height:87%;
+					width:33%;
+					position:absolute;
+					background-color:#f5c943;
+
+				}
+
+footer  #dreta a {
+					line-height: 8em;
+					float: right;
+					
+				}				
+
+
+footer  #esquerra {
+					border-style: solid;
+					top: 4px;
+					left: 4px;
+					height:87%;
+					width:33%;
+					position:absolute;
+					background-color:#f5c943;
+			
+					}
+
+footer  #centre {
+					border-style: solid;
+					top: 4px;
+					left: 629px;
+					height:87%;
+					width:32%;
+					position:absolute;
+					background-color:#f5c943;
+			
+					}														
+/* Aquí acaba el FOOTER */					

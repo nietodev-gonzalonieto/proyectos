@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	 <title>Act 1-Gonzalo Nieto</title>
+	 <meta charset="UTF-8">
+   <script type="text/javascript">
+     function validarCodigoPostal(){
+       var introducirCodigoPostal = document.getElementById("codigoPostal").value;
+       var exresionRegular =/^([1-9]{2}|[0-9][1-9]|[1-9][0-9])[0-9]{3}$/;
+       if (exresionRegular.test(introducirCodigoPostal)==true) {
+         alert("Correcte");
+       }else {
+         alert("Incorrecte");
+       }
+     }
+     function validarNumeroTlf(){
+       var NumTlf = document.getElementById("numTlf").value;
+       var exresionRegular =/^[8,9]\d-\d{3}-\d{2}-\d{2}$/;
+       if (exresionRegular.test(NumTlf)==true) {
+         alert("Correcte");
+       }else {
+         alert("Incorrecte");
+       }
+     }
+
+     function validarPrefijoTlf(){
+       var introducirPrefijoTlf = document.getElementById("prefijoTlf").value;
+       var exresionRegular =/^(\+34|0034|34)?[ -]*(6|7)[ -]*([0-9][-]*){8}$/;
+       if (exresionRegular.test(introducirPrefijoTlf)==true) {
+         alert("Correcte");
+       }else {
+         alert("Incorrecte");
+       }
+     }
+     function validarNombreUsuario(){
+       var NombreUsuario = document.getElementById("usuario").value;
+       var exresionRegular =/^[a-z0-9ü][a-z0-9ü_]{3,9}$/;
+       if (exresionRegular.test(NombreUsuario)==true) {
+         alert("Correcte");
+       }else {
+         alert("Incorrecte");
+       }
+     }
+     function validarSeguridadSocial (){
+       var introducirSeguridadSocial = document.getElementById("seguretatSocial").value;
+       var exresionRegular =/^\d{2}-\d{9}$/;
+       if (exresionRegular.test(introducirSeguridadSocial)==true) {
+         alert("Correcte");
+       }else {
+         alert("Incorrecte");
+       }
+     }
+     function validarURL(){
+       var introducirUrl = document.getElementById("url").value;
+       var exresionRegular =/(^https|http)[:]\/\/(www)[.]\S*[.](com|cat|es)|(^www)[.](com|cat|es)$/;
+       if (exresionRegular.test(introducirUrl)==true) {
+         alert("Correcte");
+       }else {
+         alert("Incorrecte");
+       }
+     }
+     function validarHora(){
+       var introducirHora = document.getElementById("hora").value;
+       var exresionRegular =/^([0-1][0-9]|2[0-3])(:)([0-5][0-9])(:)([0-5][0-9])$/;
+       if (exresionRegular.test(introducirHora)==true) {
+         alert("Correcte");
+       }else {
+         alert("Incorrecte");
+       }
+     }
+   </script>
+  </head>
+  <body>
+    <form>
+    <!--Codigo postal-->
+      Codigo Postal: <input type="text" id="codigoPostal">
+      <input type="button" onclick="validarCodigoPostal()" value="Comprovar"><br><br>
+    <!--Numero de telefono-->
+      Numero Telefono: <input type="text" id="numTlf">
+      <input type="button" onclick="validarNumeroTlf()" value="Comprovar"><br><br>
+    <!--prefijo + numero de telefono-->
+      Prefijo NumTlf: <input type="text" id="prefijoTlf">
+      <input type="button" onclick="validarPrefijoTlf()" value="Comprovar"><br><br>
+    <!--nom usuari-->
+      Usuario: <input type="text" id="usuario">
+      <input type="button" onclick="validarNombreUsuario()" value="Comprovar"><br><br>
+    <!--Seguretat Social-->
+      Seguretat Social: <input type="text" id="seguretatSocial">
+      <input type="button" onclick="validarSeguridadSocial()" value="Comprovar"><br><br>
+    <!--Url-->
+      Validació Url: <input type="text" id="url">
+      <input type="button" onclick="validarURL()" value="Comprovar" ><br><br>
+    <!--Hora-->
+      Validació hora<input type="text" id="hora">
+      <input type="button" onclick="validarHora()" value="Comprovar"><br><br>
+    </form>
+  </body>
+</html>
