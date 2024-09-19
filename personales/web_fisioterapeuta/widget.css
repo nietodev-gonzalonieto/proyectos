@@ -1,0 +1,14 @@
+.contact-info{margin-bottom:5px}
+.contact-info__icon{margin-right:20px}
+.contact-info__icon i,.contact-info__icon span{color:#black;font-size:27px}
+.contact-info .media-body h3{font-size:16px;margin-bottom:0;font-size:16px;color:black}
+.contact-info .media-body h3 a:hover{color:#1f2b7b}
+.contact-info .media-body p{color:black}
+b{color: black}
+a :hover{
+  color: white;
+}
+a {color:black;font-size:16px;margin-bottom:0;font-size:16px;color:black}
+.widgetEscritorioInformacion{background-color:#95c3e8;
+padding:20px;border-radius:2px; opacity:0.8}
+.contact-info__icon span{color:black;font-size:27px;}

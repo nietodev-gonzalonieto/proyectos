@@ -1,0 +1,92 @@
+.tituloFooter {
+	color: #73C5E8 !important;
+	font-size: 26px;
+}
+.footer-pera a{
+	line-height: 28px;
+	font-size:1.2em;
+}
+h1 {
+	font-size: 56px;
+	font-weight: bold;
+}
+.imagenCara {
+	width: 87px;
+	height: 87px;
+	border-radius: 200px;
+}
+.blog_details:hover {
+	border: 1px solid transparent;
+    border-top: 0;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    background: #73C5E8;
+}
+.blog_details:hover p{
+	color: #fff;
+}
+.blog_details:hover h2{
+	color: #fff;
+}
+.blog_details p {
+	font-size: 1.1em !important;
+}
+.tituloImpostor {
+    font-size: 70px;
+    font-weight: 900;
+    margin-bottom: 14px;
+    color: #102039;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+@media (max-width: 1200px){
+	.galeria {
+		display: none;
+	}
+}
+.icono{
+  line-height: 1;
+  width: 70px;
+  color: #3eadf8;
+  display:block;
+}
+@media (min-width: 778px){
+  .icono {
+    margin: auto;
+  }
+}
+.department_area .depart_ment_tab .nav li a.active h3 {
+    color: #fff;
+}
+.department_area .depart_ment_tab .nav li a h3 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #296ea4;
+    margin-bottom: 0;
+}
+#osteopatia{
+  height: 500px;
+  padding: 10px;
+  margin-top: 20px;
+}
+.contenido{
+    background-image: none;
+  }
+p .osteopatia{
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+body#contenidoServicios{
+  background-color:#F5F8FF;
+}
+#divIconos{
+	background-color:white;
+}
+.postsRecientes{
+		padding-top: 4%;
+}

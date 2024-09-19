@@ -1,0 +1,225 @@
+.footer{
+	width:100%;
+	background-color:black;
+	position:fixed;
+	bottom:0px;
+	color:white;
+	border-top:1px solid white;
+	z-index:2;
+}
+body{
+  background-color: black;
+}
+p{
+  color: white;
+}
+
+.sospechoso{
+  max-width: 100%;
+}
+
+#myvideo{
+  width: 100%;
+  height: 100%;
+}
+.header{
+	background-color:black;
+	position:fixed;
+	color:white;
+	width:100%;
+	z-index:2;
+}
+h4{
+	font-size:18px;
+	margin:10px;
+}
+.sospechoso{
+	border-radius:2px;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
+-moz-box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
+box-shadow: 0px 0px 5px 0px rgba(255,255,255,1);
+}
+
+.espaciadoArriba{
+	padding-top:60px;
+	padding-bottom:70px;
+}
+.textoBlanco{
+	color:white;
+}
+.textoBlanco p{
+	margin-top:15px;
+	text-justify: inter-word;
+	margin-left:10px;
+	text-align:left;
+}
+
+.tituloTienda{
+	font-size: 1.3em;
+    padding: 20px;
+    border: 5px solid;
+    border-color: black;
+    font-weight: bold;
+	background-color:#00a19b;
+	color:white;
+	text-align:center;
+}
+
+.espaciadoArribaSolo{
+	    padding-top: 60px;
+}
+.espaciadoAbajoSolo{
+	padding-bottom: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .rainbow-button{
+      width:calc(20vw + 6px);
+      height:calc(8vw + 6px);
+      background-image:linear-gradient(90deg,#00C0FF 0,#FFCF00 49%,#FC4F4F 80%,#00C0FF 100%);
+      border-radius:5px;display:flex;
+      align-items:center;
+      justify-content:center;
+      text-transform:uppercase;font-size:3vw;font-weight:700
+    }
+
+  .rainbow-button:after{
+    content:attr(alt);
+    width:20vw;
+    height:8vw;
+    background-color:#191919;
+    display:flex;
+    align-items:center;
+    justify-content:center
+  }
+  .rainbow-button:hover{
+    animation:slidebg 2s linear infinite
+  }
+  @keyframes slidebg{
+    to{
+      background-position:20vw
+      }
+    }
+	.col .video{
+  max-width: 100%;
+}
+
+#video{
+  max-width: 100%!important;
+}
+
+.instruccionesTitulo{
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 10%;
+}
+.row .instrucciones{
+  padding: 10%!important;
+}
+.parrafo{
+  color: white;
+padding-top: 8%;
+padding-left: 15%;
+padding-right: 5%;
+text-align: justify;
+}
+.instruccionfoto{
+  vertical-align: middle;
+  border-style: none;
+  padding: 10%;
+  max-width: 100%;
+  padding-top: 7%;
+}
+.boton{
+  padding-top: 6%;
+padding-bottom: 12%;
+}
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('../images/loader/1.jpg') 50% 50% no-repeat rgb(249,249,249);
+}
+
+.respuestaEstablecimiento{
+	font-weight:bold;
+	font-size:1.2em;
+	color:#00a19b;
+}
+
+.jugueteCorrecto{
+	border:3px solid #00a19b;
+}
+
+.circulo {
+    width: 80px;
+    height: 80px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #f9faf4;
+}
+.scrollableLateral {
+    overflow-x: auto;
+}
+.cuadrado {
+  padding: 5px;
+  border: 3px solid #d0d0d0;
+}
+.padding {
+  padding: 10px;
+  padding-right: 5px;
+}
+.noPaddingLeft {
+  padding-left: 0px;
+}
+.modeloElegirBotones {
+  border: solid;
+  padding: 5px;
+  font-weight: bold;
+  color: black;
+  font-size: 40px;
+
+}
+.scrollableLateral .col-2{
+	background-color:#00a19b;
+}
+.scrollableLateral .col-1{
+	background-color:#00a19b;
+}
+.sinFondoPrueba13{
+	background-color:black !important;
+}
