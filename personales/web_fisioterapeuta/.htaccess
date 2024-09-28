@@ -1,8 +1,0 @@
-ErrorDocument 404 /404.php
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^fisioterapiavendrell.com [NC]
-RewriteCond %{HTTP:X-Forwarded-Proto} !^https$
-RewriteRule ^(.*)$ https://www.fisioterapiavendrell.com/$1 [L,R=301]
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.php -f
-RewriteRule ^(.*)$ $1.php
